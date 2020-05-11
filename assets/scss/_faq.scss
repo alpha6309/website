@@ -1,0 +1,237 @@
+
+
+
+/*===========================
+    14.FAQ css 
+===========================*/
+
+
+
+
+
+.faq-area{
+	padding-top: 117px;
+	padding-bottom: 115px;
+	& .section-title{
+		& p{
+			padding-bottom: 48px;
+		}
+	}
+	& .faq-thumb{
+		@media #{$xs} {
+			margin-top: 30px;
+		}
+		@media #{$sm} {
+			margin-top: 60px;
+		}
+		& img{
+			width: 100%;
+		}
+	}
+	& .faq-content{
+		background: #ef5b51;
+		padding: 40px 20px 45px;
+		@media #{$md} {
+			padding: 40px 50px 45px;
+		}
+		& .title{
+			color: $white;
+			font-size: 24px;
+		}
+		& p{
+			color: $white;
+			font-size: 14px;
+			line-height: 28px;
+			padding-top: 17px;
+			padding-bottom: 27px;
+			@media #{$lg} {
+				font-size: 13px;
+			}
+		}
+		& a{
+			background: #d24238;
+			border-color: #d24238;
+		}
+	}
+	&.about-faq{
+		padding-top: 100px;
+		padding-bottom: 130px;
+		& .faq-content{
+			background: $theme-color-2;
+			& a{
+				background: #d15b00;
+				border-color: #d15b00;
+			}
+		}
+		& .company-content{
+			@media #{$md} {
+				margin-top: 30px;
+				padding-left: 0;
+				padding-right: 0;
+			}
+			@media #{$xs} {
+				margin-top: 30px;
+				padding-left: 0;
+				padding-right: 0;
+			}
+			& .section-title{
+				& p{
+					border-bottom: 1px solid #ddd;
+					padding-bottom: 38px;
+				}
+			}
+			& .company-item{
+				& p{
+					padding-top: 30px;
+					padding-bottom: 35px;
+				}
+				& ul{
+					& li{
+						display: inline-block;
+						@media #{$xs} {
+							display: block;
+						}
+						@media #{$sm} {
+							display: inline-block;
+						}
+						& .link{
+							font-size: 15px;
+							font-weight: 600;
+							color: $theme-color-2;
+							margin-left: 35px;
+							@media #{$xs} {
+								margin-left: 0;
+								margin-top: 20px;
+							}
+							@media #{$sm} {
+								margin-left: 35px;
+								margin-top: 0;
+							}
+							& i{
+								padding-left: 6px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	&.faq-page{
+		padding-top: 100px;
+	}
+}
+
+
+
+
+
+.faq-accordion{
+	padding-top: 30px;
+	& .accordion{
+		border: 2px solid transparent;
+		& .card{
+			border-radius: 0px !important;
+			border: 0;
+			border-top: 2px solid transparent;
+			margin-bottom: 30px;
+			background: #eef3f9;
+			&:first-child{
+				border-top: 0;
+			}
+			& .card-header{
+				border-bottom: 0;
+				padding: 0;
+				margin: 0;
+				background-color: transparent;
+				& a{
+					line-height: 70px;
+					padding: 0 0 0 40px;
+					text-decoration: none;
+					font-weight: 600;
+					font-size: 18px;
+					width: 100%;
+					color: $white;
+					position: relative;
+					background: #3b7eff;
+					@media #{$lg} {
+						padding: 0 0 0 40px;
+						font-size: 18px;
+					}
+					@media #{$xs} {
+						line-height: 28px;
+						padding: 10px 0px 10px 26px;
+					}
+					@media #{$sm} {
+						line-height: 70px;
+						padding: 0 0 0 40px;
+					}
+					& i{
+						color: $theme-color;
+						padding-right: 20px;
+						@media #{$lg} {
+							padding-right: 10px;
+						}
+					}
+					&.collapsed{
+						color: #8a8a8a;
+						background-color: transparent;
+						font-weight: 600;
+						@media #{$lg} {
+							padding: 0 0 0 40px;
+							font-size: 15px;
+						}
+
+						&::before{
+							content: '\f105';
+							color: #666;
+						}
+					}
+					&::before{
+						position: absolute;
+						content: '\f105';
+						right: 36px;
+						font-size: 16px;
+						font-family: 'Font Awesome 5 Pro';
+						color: #fff;
+						@media #{$xs} {
+							right: 18px;
+						}
+
+					}
+				}
+			}
+			& .card-body{
+				padding: 0 30px 20px 40px !important;
+				background: #3b7eff;
+				@media #{$xs} {
+					padding: 0 30px 20px 26px !important;
+				}
+				@media #{$sm} {
+					padding: 0 30px 20px 40px !important;
+				}
+				& p{
+					font-size: 14px;
+					color: $white;
+					font-weight: 500;
+					line-height: 28px;
+				}
+			}
+		}
+	}
+
+}
+
+
+
+
+
+.accordion-area{
+	padding-top: 97px;
+	& .faq-accordion {
+		& .accordion {
+			& .card{
+				margin-bottom: 15px;
+			}
+		}
+	}
+}

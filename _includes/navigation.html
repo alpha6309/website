@@ -1,0 +1,43 @@
+                <div class="navigation">
+                    <nav class="navbar navbar-expand-lg navbar-light ">
+                        <a class="navbar-brand" href="{{site.url}}"><img src="{{site.logo}}" alt="{{site.title}}"/></a> 
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="toggler-icon"></span>
+                            <span class="toggler-icon"></span>
+                            <span class="toggler-icon"></span>
+                        </button> <!-- navbar toggler -->
+
+                        <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
+                            <ul class="navbar-nav m-auto">
+    
+                                {% for link in site.data.navigation %}
+                                {% assign active = nil %}
+
+                                {% for sublink in link.submenu %}
+                                    {% if page.url contains sublink.url %}
+                                        {% assign active = 'active' %}
+                                    {% endif %}
+                                {% endfor %}
+
+                                {% if page.url contains link.url %}
+                                    {% assign active = 'active' %}
+                                {% endif %}
+                                 
+                                 <li class="nav-item {{active}}">
+                                     <a class="nav-link" href="{{link.url}}">{{link.text}}{% if link.submenu %}  <i class="fal fa-angle-down"></i>{% endif %}</a>
+                                    {% if link.submenu %}
+                                    <ul class="sub-menu">
+                                        {% for sublink in link.submenu %}
+                                        <li><a class="nav-link" href="{{sublink.url}}">{{sublink.text}}</a></li>
+                                        {% endfor %}
+                                    </ul>
+                                    {% endif %}
+                                </li>
+                                {% endfor %}
+                            </ul>
+                        </div> 
+                        <div class="navbar-btn d-none d-sm-block">
+                            <a class="main-btn" href="#">Consultations</a>
+                        </div>
+                    </nav>
+                </div>

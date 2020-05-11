@@ -1,0 +1,32 @@
+---
+layout: default
+title: Category Page
+pagination:
+  enabled: true
+---
+<section class="service-area pt-100 pb-50">
+  <div class="container">
+      <div class="row">
+        {% for post in page.posts %}
+          <div class="col-md-6 mb-50 ">
+              <div class="services-box">
+                  {% if post.post_image %}
+                  <div class="services-img">
+                      <img src="{{post.post_image}}" class="img-fluid" alt="{{post.title}}">
+                  </div>
+                  {% endif %}
+                  <div class="services-content">
+                      <div class="card-title">
+                          <h2 class="blog-title"><a href="{{post.url}}">{{post.title}}</a></h2>
+                      </div>
+                      <div class="card-text">
+                          <p>{{post.excerpt | strip_html | truncatewords:"30"}}</p>
+                      </div>
+                      <a href="{{post.url}}" class="btn">Read More</a>
+                  </div>
+              </div>
+          </div>
+        {% endfor %}
+      </div>
+  </div>
+</section>

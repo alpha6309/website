@@ -1,0 +1,290 @@
+
+
+
+/*===========================
+    5.FEATURES css 
+===========================*/
+
+
+
+.features-area{
+	position: relative;
+	padding-top: 117px;
+	&::before{
+		position: absolute;
+		content: '';
+		left: 0;
+		top: 0;
+		height: 100%;
+		width: 100%;
+		background-color: rgba(44, 47, 80,.5);
+
+
+	}
+
+	& .features-item{
+		padding: 50px 8px;
+		border-radius: 10px;
+		@include transition(0.3s);
+		@media #{$lg} {
+			padding: 50px 0px;
+		}
+		@media #{$md} {
+			padding: 50px 38px;
+		}
+		@media #{$xs} {
+			padding: 50px 20px;
+		}
+		@media #{$sm} {
+			padding: 50px 20px;
+		}
+		& > i{
+			height: 70px;
+			width: 70px;
+			text-align: center;
+			line-height: 70px;
+			border-radius: 50%;
+			font-size: 30px;
+			color: $white;
+			background: #3b7eff;
+			@include transition(0.3s);
+		}
+		& .title{
+			font-size: 24px;
+			line-height: 30px;
+			font-weight: 600;
+			color: $black;
+			padding: 0 10px;
+			padding-top: 25px;
+			@include transition(0.3s);
+			@media #{$lg} {
+				font-size: 20px;
+			}
+		}
+		& a{
+			font-size: 15px;
+			color: #3b7eff;
+			font-weight: 600;
+			margin-top: 24px;
+			@include transition(0.3s);
+			& i{
+				padding-left: 6px;
+			}
+		}
+		&.item-2{
+			& > i{
+				background: #f86e03;
+			}
+			& a{
+				color: #f86e03;
+			}
+		}
+		&.item-3{
+			& > i{
+				background: #0154f7;
+			}
+			& a{
+				color: #0154f7;
+			}
+		}
+		&.item-4{
+			& > i{
+				background: #ef5b51;
+			}
+			& a{
+				color: #ef5b51;
+			}
+		}
+		&:hover{
+			background: #3B7EFF;
+			& > i{
+				background: $white;
+				color: #3B7EFF;
+			}
+			& .title{
+				color: $white;
+			}
+			& a{
+				color: $white;
+			}
+			&.item-2{
+				background: #f86e03;
+				& > i{
+					color: #f86e03;
+				}
+			}
+			&.item-3{
+				background: #0154f7;
+				& > i{
+					color: #0154f7;
+				}
+			}
+			&.item-4{
+				background: #ef5b51;
+				& > i{
+					color: #ef5b51;
+				}
+			}
+		}
+	}
+}
+	
+
+
+.featires-2-area{
+	padding-top: 117px;
+	& .section-title{
+		& p{
+			padding-bottom: 48px;
+		}
+	}
+	& .title-text{
+		& p{
+			font-size: 14px;
+			line-height: 26px;
+			color: #8a8a8a;
+			padding-top: 20px;
+		}
+	}
+	& .featires-item{
+		& .featires-thumb{
+			overflow: hidden;
+			& img{
+				width: 100%;
+				@include transition(0.3s);
+				@include transform(scale(1));
+			}
+		}
+		& .featires-content{
+			box-shadow: 0px 14px 28px 0px rgba(42, 121, 241, 0.1);
+			border-radius: 7px;
+			margin-left: 20px;
+			margin-right: 20px;
+			margin-top: -50px;
+			text-align: center;
+			background: $white;
+			z-index: 99;
+			position: relative;
+			padding: 48px 25px 22px;
+			@include transition(0.3s);
+			@media #{$lg} {
+				padding: 48px 0px 22px;
+			}
+			@media #{$md} {
+				padding: 48px 55px 22px;
+			}
+			@media #{$sm} {
+				padding: 48px 35px 22px;
+			}
+
+			& > i{
+				height: 60px;
+				width: 60px;
+				text-align: center;
+				border-radius: 50%;
+				background: #3b7eff;
+				line-height: 60px;
+				font-size: 24px;
+				color: $white;
+				position: absolute;
+				left: 50%;
+				top: -28px;
+				transform: translateX(-50%);
+				@include transition(0.3s);
+
+			}
+			& .title{
+				font-size: 18px;
+				font-weight: 600;
+				color: $black;
+				line-height: 24px;
+				@include transition(0.3s);
+			}
+			& a{
+				margin-top: 12px;
+				font-size: 15px;
+				font-weight: 500;
+				color: $theme-color;
+				@include transition(0.3s);
+			}
+		}
+		&.item-2{
+			& .featires-content{
+				& > i{
+					background: #f86e03;
+				}
+				& a{
+					color: #f86e03;
+				}
+			}
+		}
+		&.item-3{
+			& .featires-content{
+				& > i{
+					background: #0154f7;
+				}
+				& a{
+					color: #0154f7;
+				}
+			}
+		}
+		&.item-4{
+			& .featires-content{
+				& > i{
+					background: #ef5b51;
+				}
+				& a{
+					color: #ef5b51;
+				}
+			}
+		}
+		&:hover{
+			& .featires-thumb{
+				& img{
+					@include transform(scale(1.1));
+				}
+			}
+			& .featires-content{
+				background: #3b7eff;
+				& > i{
+					color: #3b7eff;
+					background: $white;
+				}
+				& .title{
+					color: $white;
+				}
+				& a{
+					color: $white;
+				}
+			}
+			&.item-2{
+				& .featires-content{
+					background: #f86e03;
+					& i{
+						color: #f86e03;
+					}
+				}
+			}
+			&.item-3{
+				& .featires-content{
+					background: #0154f7;
+					& i{
+						color: #0154f7;
+					}
+				}
+			}
+			&.item-4{
+				& .featires-content{
+					background: #ef5b51;
+					& i{
+						color: #ef5b51;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+

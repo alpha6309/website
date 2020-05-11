@@ -1,0 +1,166 @@
+
+
+
+/*===========================
+    18.CASE DETAILS css 
+===========================*/
+
+
+
+
+.case-details-area{
+	.case-thumb{
+		position: relative;
+		& .play{
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			@include transform(translate(-50%, -50%));
+			& a{
+				font-size: 24px;
+				height: 120px;
+				width: 120px;
+				text-align: center;
+				line-height: 120px;
+				border-radius: 50%;
+				background: $theme-color;
+				color: $white;
+			}
+		}
+		& img{
+			width: 100%;
+		}
+	}
+	& .case-list{
+		border-bottom: 2px solid #efefef;
+		padding-bottom: 40px;
+		margin-bottom: 25px;
+		& .item{
+			& span{
+				font-size: 16px;
+				font-weight: 700;
+				color: $body-text;
+				letter-spacing: 2px;
+				@media #{$md} {
+					font-size: 14px;
+				}
+				@media #{$sm} {
+					font-size: 13px;
+				}
+			}
+			& .title{
+				font-size: 24px;
+				color: $black;
+				@media #{$md} {
+					font-size: 20px;
+				}
+				@media #{$sm} {
+					font-size: 16px;
+				}
+
+			}
+		}
+	}
+	& .case-content{
+		@media #{$lg} {
+			padding-left: 15px;
+		}
+		@media #{$md} {
+			padding-left: 0;
+		}
+		@media #{$xs} {
+			padding-left: 0;
+		}
+		& .title{
+			font-size: 36px;
+			font-weight: 700;
+			color: $black;
+			padding-bottom: 17px;
+			@media #{$lg} {
+				font-size: 30px;
+			}
+			@media #{$xs} {
+				font-size: 24px;
+			}
+			@media #{$sm} {
+				font-size: 36px;
+			}
+
+		}
+		& p{
+			padding-right: 10px;
+			@media #{$lg} {
+				padding-right: 0;
+			}
+			@media #{$md} {
+				padding-right: 0;
+			}
+			@media #{$xs} {
+				padding-right: 0;
+			}
+			&.text{
+				font-size: 16px;
+				padding-bottom: 40px;
+			}
+		}
+	}
+	& .case-share{
+		border-top: 2px solid #efefef;
+		margin-top: 30px;
+		padding-top: 25px;
+		& .case-tag{
+			& ul{
+				& li{
+					display: inline-block;
+					& span{
+						font-weight: 700;
+						color: $black;
+						font-size: 16px;
+						padding-right: 6px;
+						@media #{$xs} {
+							font-size: 14px;
+						}
+					}
+					& a{
+						font-weight: 500;
+						color: $body-text;
+						@media #{$md} {
+							font-size: 14px;
+						}
+					}
+				}
+			}
+		}
+		& .case-social{
+			@media #{$xs} {
+				margin-top: 30px;
+			}
+			& ul{
+				& li{
+					display: inline-block;
+					& span{
+						color: $black;
+						font-weight: 700;
+						padding-right: 6px;
+						@media #{$xs} {
+							font-size: 14px;
+						}
+
+					}
+					& a{
+						height: 35px;
+						width: 35px;
+						text-align: center;
+						line-height: 35px;
+						border-radius: 50%;
+						background: $theme-color;
+						color: $white;
+						font-size: 14px;
+						margin-left: 5px;
+					}
+				}
+			}
+		}
+	}
+
+}

@@ -1,0 +1,19 @@
+<section class="banner-area page-title bg_cover" style="background-image: url({% if page.header_image %} {{page.header_image}} {% else if page.post_image %}{{page.post_image}} {% endif %});">
+    <div class="banner-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="page-title-content">
+                        <h3 class="title text-capitalize">{{page.title}}</h3>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="{{site.url}}">Home</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">{{page.title | truncatewords: "4"}}</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

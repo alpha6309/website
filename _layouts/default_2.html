@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+{% include head.html %}
+<body>
+<div class="preloader" id="preloader">
+    <div class="three ">
+        <div class="loader" id="loader">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</div>
+    {% include header_2.html %}
+    {{content}}
+    {% include footer_2.html %}
+    {% include scripts.html %}
+</body>
+
+</html>

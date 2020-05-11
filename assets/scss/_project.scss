@@ -1,0 +1,284 @@
+
+
+
+/*===========================
+    6.PROJECT css 
+===========================*/
+
+
+
+
+
+.project-area{
+	padding-top: 117px;
+	padding-bottom: 122px;
+	border-bottom: 1px solid #dfdfdf;
+	& .project-item{
+		& .project-thumb{
+			box-shadow: 0px 10px 80px 0px rgba(167, 167, 167, 0.65);
+			border-radius: 12px;
+			overflow: hidden;
+			& img{
+				width: 100%;
+				transform: scale(1);
+				@include transition(0.3s);
+			}
+		}
+		& .project-content{
+			& .title{
+				font-size: 30px;
+				font-weight: 600;
+				color: $black;
+				padding-top: 44px;
+				@media #{$xs} {
+					font-size: 26px;
+				}
+				@media #{$sm} {
+					font-size: 30px;
+				}
+			}
+			& span{
+				font-size: 18px;
+				font-weight: 500;
+				color: $body-text;
+				padding-top: 10px;
+				padding-bottom: 18px;
+				@media #{$xs} {
+					font-size: 15px;
+				}
+				@media #{$sm} {
+					font-size: 18px;
+				}
+			}
+			& p{
+				padding: 0 30px;
+				@media #{$lg} {
+					padding: 0 26px;
+				}
+				@media #{$md} {
+					padding: 0;
+				}
+				@media #{$xs} {
+					padding: 0;
+				}
+				@media #{$sm} {
+					
+				}
+
+			}
+			& a{
+				font-size: 15px;
+				font-weight: 600;
+				color: $theme-color;
+				margin-top: 20px;
+				@include transition(0.3s);
+				&:hover{
+					color: $theme-color-2;
+				}
+			}
+		}
+		&:hover{
+			& .project-thumb{
+				& img{
+					transform: scale(1.1);
+				}
+			}
+		}
+	}
+
+	&.project-4-area{
+		padding-top: 94px;
+	}
+}
+
+.fact-area{
+	padding-bottom: 127px;
+	& .fact-item{
+		& .title{
+			font-size: 60px;
+			font-weight: 700;
+			color: $theme-color;
+		}
+        & > span{
+            font-weight: 600;
+            color: #8a8a8a;
+            padding-top: 12px;
+        }
+	}
+}
+
+
+
+
+.project-2-area{
+	padding-top: 117px;
+	padding-bottom: 130px;
+	& .project-item{
+		position: relative;
+		overflow: hidden;
+		margin-left: 2px;
+		margin-right: 2px;
+		& img{
+			width: 100%;
+		}
+		&::before{
+			position: absolute;
+			content: '';
+			left: 0;
+			top: 0;
+			height: 100%;
+			width: 100%;
+			background-color: rgb(27, 105, 255);
+			opacity: 0.8;
+
+		}
+		& .project-content{
+			position: absolute;
+			bottom: -103px;
+			left: 50%;
+			width: 65%;
+			transform: translateX(-50%);
+			@include transition(0.3s);
+			@media #{$lg} {
+				width: 90%;
+			}
+			@media #{$xs} {
+				width: 92%;
+			}
+			@media #{$sm} {
+				width: 65%;
+			}
+			& .title{
+				color: $white;
+				font-size: 30px;
+			}
+			& span{
+				color: $white;
+				font-size: 18px;
+				font-weight: 500;
+				padding-top: 4px;
+			}
+			& p{
+				color: $white;
+				font-size: 18px;
+				font-weight: 500;
+				line-height: 28px;
+				padding-top: 18px;
+				padding-bottom: 20px;
+				opacity: 0;
+				@include transition(0.3s);
+				@media #{$sm} {
+					font-size: 17px;
+				}
+			}
+			& a{
+				color: $white;
+				font-weight: 600;
+				opacity: 0;
+				@include transition(0.3s);
+				& i{
+					padding-left: 6px;
+				}
+			}
+		}
+		&.active,
+		&:hover{
+			& .project-content{
+				bottom: 48px;
+				& p{
+					opacity: 1;
+				}
+				& a{
+					opacity: 1;
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+.project-case-area{
+	& .project-case-item{
+		& .project-case-thumb{
+			border-radius: 12px;
+			overflow: hidden;
+			position: relative;
+			z-index: 10;
+			&::after{
+				position: absolute;
+				content: '';
+				right: 0;
+				bottom: 0;
+				width: 0;
+				height: 0;
+				border-bottom: 120px solid $theme-color-2;
+				border-left: 120px solid transparent;
+				z-index: 1;
+			}
+			& img{
+				width: 100%;
+				transform: scale(1);
+				@include transition(0.3s);
+			}
+			& i{
+				position: absolute;
+				right: 20px;
+				bottom: 20px;
+				color: $white;
+				font-size: 35px;
+				z-index: 2;
+			}
+		}
+		& .project-case-content{
+			& .title{
+				font-size: 24px;
+				color: $black;
+				@include transition(0.3s);
+			}
+			& span{
+				font-weight: 500;
+				color: $body-text;
+				padding-top: 8px;
+				padding-bottom: 19px;
+				@media #{$xs} {
+					font-size: 14px;
+				}
+				@media #{$sm} {
+					font-size: 16px;
+				}
+			}
+			& a{
+				font-size: 15px;
+				font-weight: 600;
+				color: $theme-color;
+				padding-top: 18px;
+				@include transition(0.3s);
+				&:hover{
+					color: $theme-color-2;
+				}
+				& i{
+					padding-left: 6px;
+				}
+			}
+		}
+		&:hover{
+			& .project-case-thumb{
+				& img{
+					transform: scale(1.1);
+				}
+			}
+			& .project-case-content{
+				& .title{
+					color: $theme-color-2;
+				}
+			}
+		}
+	}
+	&.project-home{
+		padding-top: 117px;
+	}
+}
+

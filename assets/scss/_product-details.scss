@@ -1,0 +1,301 @@
+
+
+
+/*===========================
+    21.PRODUCT DETAILS css 
+===========================*/
+
+
+
+
+
+
+.product-details-area{
+	& .product-details-slide-item{
+		& ul{
+			& li{
+				& img{
+					width: 100%;
+				}
+			}
+		}
+	}
+	& .product-item-slide{
+		margin-right: -30px;
+		@media #{$lg} {
+			margin-right: 0;
+		}
+		@media #{$md} {
+			margin-right: 0;
+		}
+		@media #{$xs} {
+			margin-right: 0;
+		}
+		& .item{
+			 img{
+			 	width: 100%;
+			 }
+		}
+	}
+	& .product-details-content{
+		@media #{$lg} {
+			margin-left: 0;
+		}
+		@media #{$md} {
+			margin-left: 0;
+		}
+		@media #{$xs} {
+			margin-left: 0;
+		}
+		& .product-details-content-item{
+			& .title{
+				font-size: 24px;
+				font-weight: 700;
+				line-height: 30px;
+				color: $black;
+				padding-top: 17px;
+				padding-bottom: 20px;
+			}
+			& ul{
+				& li{
+					display: inline-block;
+					& i{
+						color: #f86e03;
+						margin-right: 6px;
+					}
+				}
+			}
+			& span{
+				color: $black;
+				font-size: 18px;
+				font-weight: 700;
+				padding-top: 15px;
+				padding-bottom: 25px;
+			}
+		}
+		& .product-btns{
+			& a{
+				line-height: 40px;
+				padding: 0 30px;
+				margin-left: 20px;
+				@media #{$xs} {
+					margin-left: 0;
+					margin-top: 20px;
+				}
+				@media #{$sm} {
+					margin-left: 20px;
+					margin-top: 0px;
+				}
+			}
+		}
+		& .product-icons-item-1{
+			padding-top: 40px;
+			& ul{
+				& li{
+					display: inline-block;
+					& a{
+						font-size: 20px;
+						color: $body-text;
+					}
+					&:first-child{
+						& a{
+							padding: 0 15px;
+							border-left: 1px dashed  $theme-color;
+							border-right: 1px dashed  $theme-color;
+							line-height: 20px;
+							margin-right: 9px;
+						}
+					}
+				}
+			}
+		}
+		& .product-social-icon{
+			padding-top: 22px;
+			& ul{
+				& li{
+					display: inline-block;
+					& a{
+						color: $body-text;
+						margin-right: 8px;
+					}
+				}
+			}
+		}
+
+	}
+
+}
+
+
+
+
+.shop-tab-area{
+	& .nav{
+		border-bottom: 2px solid #ddd;
+		& .nav-item{
+			& .nav-link{
+				background-color: transparent;
+				color: $body-text;
+				font-size: 18px;
+				font-weight: 600;
+				line-height: 60px;
+				padding: 0;
+				margin-right: 40px;
+				position: relative;
+				@media #{$xs} {
+					margin-right: 20px;
+				}
+				&::before{
+					position: absolute;
+					content: '';
+					left: 0;
+					bottom: -2px;
+					height: 0px;
+					width: 100%;
+					background: $theme-color;
+				}
+				&.active{
+					color: $theme-color;
+					&::before{
+						height: 2px;
+					}
+				}
+			}
+		}
+	}
+	& .tab-content{
+		& .tab-pane{
+			& p{
+				&.text{
+					padding-top: 20px;
+					padding-bottom: 20px;
+				}
+			}
+		}
+	}
+
+}
+
+
+
+
+.shop-item-area{
+	padding-top: 113px;
+	padding-bottom: 112px;
+	& .section-title{
+		padding-bottom: 25px;
+	}
+	& .shop-item{
+		& .shop-thumb{
+			position: relative;
+			overflow: hidden;
+			& img{
+				width: 100%;
+			}
+			&::before{
+				position: absolute;
+				content: '';
+				left: 0;
+				bottom: -200px;
+				height: 100%;
+				width: 100%;
+				background-color: rgba(1, 84, 247, 0.6);
+				opacity: 0;
+				transition: all linear .3s;
+			}
+			& ul{
+				position: absolute;
+				left: 50%;
+				top: 40%;
+				transform: translate(-50%, -50%);
+				transition: all linear .3s;
+				opacity: 0;
+				& li{
+					display: inline-block;
+					& a{
+						height: 40px;
+						width: 40px;
+						background: $white;
+						color: $theme-color;
+						border-radius: 50%;
+						text-align: center;
+						line-height: 40px;
+					}
+				}
+			}
+		}
+		& .shop-content{
+			& a{
+				font-size: 18px;
+				font-weight: 600;
+				color: $black;
+				margin-top: 23px;
+			}
+			& span{
+				font-size: 14px;
+				font-weight: 700;
+				color: #3b7eff;
+				padding-bottom: 13px;
+			}
+		}
+		&:hover{
+			& .shop-thumb{
+				&::before{
+					bottom: 0px;
+					opacity: 1;
+				}
+				& ul{
+					top: 50%;
+					opacity: 1;
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.product-quantity{
+    & button{
+        width: 43px;
+        height: 33px;
+        padding: 0;
+        background-color: $white;
+        font-size: 18px;
+        color: #838b97;
+        border: 1px solid #dddddd;
+
+        @media #{$xs}{
+            width: 40px;
+            height: 40px;
+        }
+    }
+    & input{
+        width: 43px;
+        height: 33px;
+        border: 1px solid #dddddd;
+        padding: 0 10px;
+        text-align: center;
+        margin: 0 0;
+        color: #838b97;
+        border-left: 0;
+        border-right: 0;
+
+        @media #{$xs}{
+            height: 40px;
+        }
+    }
+}

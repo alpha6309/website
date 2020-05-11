@@ -1,0 +1,163 @@
+
+
+
+/*===========================
+    15.CATEGORY css 
+===========================*/
+
+
+
+.category-area{
+	& .category-thumb{
+		position: relative;
+		height: 590px;
+		&::before{
+			position: absolute;
+			content: '';
+			left: 0;
+			top: 0;
+			height: 100%;
+			width: 100%;
+			background-color: rgb(252, 85, 70);
+			opacity: .8;
+
+		}
+		& img{
+			width: 100%;
+		}
+		& .play-overlay{
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+			& a{
+				color: $white;
+				height: 100px;
+				width: 100px;
+				border-radius: 50%;
+				text-align: center;
+				line-height: 100px;
+				border: 2px solid $white;
+				font-size: 20px;	
+				&::before{
+					position: absolute;
+					content: '';
+					left: 0;
+					top: 0;
+					height: 100%;
+					width: 100%;
+					border: 1px solid $white;
+					@include animation(ripple-white 1s linear infinite);
+					border-radius: 50%;
+				}
+				&::after{
+					position: absolute;
+					content: '';
+					left: 0;
+					top: 0;
+					height: 100%;
+					width: 100%;
+					border: 1px solid $white;
+					@include animation(ripple-white 1.3s linear infinite);
+					border-radius: 50%;
+				}
+
+			}
+		}
+	}
+	& .category-misson{
+		height: 590px;
+		background: #eceff3;
+		& .misson-item{
+			& .title{
+				font-size: 24px;
+				font-weight: 700;
+				line-height: 34px;
+				padding-top: 25px;
+			}
+			& p{
+				font-weight: 500;
+				color: #8a8a8a;
+				line-height: 26px;
+				padding: 18px 0px 25px;
+				@media #{$lg} {
+					font-size: 12px;
+				}
+				@media #{$xs} {
+					font-size: 11px;
+				}
+				@media #{$sm} {
+					font-size: 14px;
+				}
+			}
+			& a{
+				background: $theme-color-3;
+				border-color: $theme-color-3;
+				&:hover{
+					color: $black;
+					background: $white;
+					border-color: $white;
+					&::before{
+						border-color: $theme-color;
+					}
+					&::after{
+						border-color: $theme-color;
+					}
+				}
+			}
+		}
+	}
+	& .category-goals{
+		height: 590px;
+		& .goals-item{
+			& .title{
+				color: $white;
+				font-size: 24px;
+				font-weight: 700;
+				line-height: 34px;
+				padding-top: 25px;
+			}
+			& p{
+				font-weight: 500;
+				color: $white;
+				line-height: 26px;
+				padding: 18px 0px 25px;
+				padding-top: 18px;
+				padding-bottom: 25px;
+				@media #{$lg} {
+					font-size: 12px;
+				}
+				@media #{$xs} {
+					font-size: 11px;
+				}
+				@media #{$sm} {
+					font-size: 14px;
+				}
+
+			}
+			& a{
+				background: $white;
+				color: $black;
+				border-color: $white;
+				&::before{
+					border-color: $theme-color;
+				}
+				&::after{
+					border-color: $theme-color;
+				}
+				&:hover{
+					color: $white;
+					background: $theme-color-3;
+					border-color: $theme-color-3;
+					&::before{
+						border-color: $white;
+					}
+					&::after{
+						border-color: $white;
+					}
+				}
+			}
+		}
+	}
+}
+

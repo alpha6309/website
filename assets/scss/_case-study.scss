@@ -1,0 +1,142 @@
+
+
+
+/*===========================
+    16.CASE STUDY css 
+===========================*/
+
+
+
+
+.case-study-area{
+	padding-top: 117px;
+	background: #eceff3;
+	& .section-title{
+		& .title{
+			padding-bottom: 50px;
+		}
+	}
+	& .case-item{
+		& .case-thumb{
+			overflow: hidden;
+			& img{
+				width: 100%;
+				@include transition(0.3s);
+				@include transform(scale(1));
+			}
+		}
+		& .case-content{
+			padding: 34px 40px;
+			@media #{$lg} {
+				padding: 34px 20px;
+			}
+			@media #{$xs} {
+				padding: 10px;
+			}
+			@media #{$sm} {
+				padding: 34px 40px;
+			}
+
+			& .title{
+				font-size: 24px;
+				color: $black;
+				@include transition(0.3s);
+			}
+			& p{
+				font-size: 14px;
+				color: #8a8a8a;
+				padding-top: 13px;
+			}
+			& a{
+				color: #8a8a8a;
+				font-weight: 600;
+				font-size: 15px;
+				margin-top: 15px;
+				@include transition(0.3s);
+				&:hover{
+					color: $theme-color-3;
+				}
+				& i{
+					padding-left: 6px;
+				}
+			}
+		}
+		&:hover{
+			& .case-thumb{
+				& img{
+					@include transform(scale(1.1));
+				}
+			}
+			& .case-content{
+				& .title{
+					color: $theme-color-2;
+				}
+			}
+		}
+	}
+	& .case-item-2{
+		position: relative;
+		overflow: hidden;
+		& img{
+			width: 100%;
+			@include transition(0.3s);
+			transform: scale(1);
+		}
+		& .case-overlay{
+			position: absolute;
+			left: 0;
+			top: 0;
+			height: 100%;
+			width: 100%;
+			background-image: -moz-linear-gradient( 90deg, rgb(6,31,73) 0%, rgba(12,39,86,0.5) 70%, rgba(14,43,92,0.01) 99%, rgb(14,43,92) 100%);
+			background-image: -webkit-linear-gradient( 90deg, rgb(6,31,73) 0%, rgba(12,39,86,0.5) 70%, rgba(14,43,92,0.01) 99%, rgb(14,43,92) 100%);
+			background-image: -ms-linear-gradient( 90deg, rgb(6,31,73) 0%, rgba(12,39,86,0.5) 70%, rgba(14,43,92,0.01) 99%, rgb(14,43,92) 100%);
+			background-image: -o-linear-gradient( 90deg, rgb(6,31,73) 0%, rgba(12,39,86,0.5) 70%, rgba(14,43,92,0.01) 99%, rgb(14,43,92) 100%);
+			background-size: cover;
+			& .case-content{
+				position: absolute;
+				left: 30px;
+				bottom: 25px;
+				& .title{
+					color: $white;
+					font-size: 20px;
+					text-transform: capitalize;
+					padding-bottom: 6px;
+				}
+				& a{
+					color: $white;
+					font-size: 15px;
+					font-weight: 600;
+					@include transition(0.3s);
+					&:hover{
+						color: $theme-color-2;
+					}
+					& i{
+						padding-left: 6px;
+					}
+				}
+			}
+		}
+		&:hover{
+			& img{
+				transform: scale(1.1);
+			}
+		}
+	}
+	&.case-page-1{
+		padding-top: 100px;
+		background: $white;
+		& .case-item{
+			& .case-content{
+				background: #eceff3;
+			}
+		}
+	}
+	&.case-page-2{
+		background: $white;
+		padding-top: 100px;
+	}
+}
+
+
+

@@ -1,0 +1,485 @@
+
+
+
+/*===========================
+    10.BLOG css 
+===========================*/
+
+
+
+
+.blog-area{
+	padding-top: 116px;
+	padding-bottom: 124px;
+	& .blog-item{
+		& .blog-thumb{
+			position: relative;
+			overflow: hidden;
+			z-index: 10;
+			& img{
+				width: 100%;
+				transform: scale(1);
+				@include transition(0.3s);
+			}
+			&::before{
+				position: absolute;
+				content: '';
+				left: 0;
+				top: 0;
+				height: 100%;
+				width: 100%;
+				background-color: rgba(1, 84, 247,.6);
+				z-index: 5;
+			}
+		}
+		& .blog-content{
+			padding-top: 33px;
+			& ul{
+				& li{
+					display: inline-block;
+					font-size: 14px;
+					font-weight: 500;
+					color: #8a8a8a;
+					margin-right: 26px;
+	                @media #{$xs} {
+	                    margin-right: 20px;
+	                }
+					& i{
+						color: $theme-color;
+						padding-right: 6px;
+					}
+				}
+			}
+			& .title{
+				font-size: 20px;
+				font-weight: 600;
+				line-height: 28px;
+				padding-top: 11px;
+				@media #{$lg} {
+					font-size: 18px;
+				}
+				@media #{$xs} {
+					font-size: 18px;
+				}
+				@media #{$sm} {
+					font-size: 20px;
+				}
+				& a{
+					color: $black;
+				}
+			}
+			& p{
+				font-size: 14px;
+				line-height: 26px;
+				color: #8a8a8a;
+				font-weight: 400;
+				padding-top: 15px;
+			}
+			& > a{
+				font-size: 15px;
+				font-weight: 600;
+				color: $theme-color;
+				margin-top: 18px;
+				& i{
+					padding-left: 6px;
+				}
+			}
+		}
+		&.item-2{
+			& .blog-thumb{
+				position: relative;
+				&::before{
+					background-color: rgba(239, 91, 81,.6);
+				}
+				& i{
+					position: absolute;
+					top: 15px;
+					right: 15px;
+					height: 60px;
+					width: 55px;
+					background: $white;
+					text-align: center;
+					line-height: 60px;
+					color: $theme-color-2;
+					font-size: 36px;
+					border-radius: 5px;
+					z-index: 6;
+				}
+			}
+		}
+		&:hover{
+			& .blog-thumb{
+				& img{
+					transform: scale(1.2);
+				}
+			}
+		}
+	}
+	&.blog-masonry{
+		padding-top: 100px;
+		padding-bottom: 128px;
+		& .blog-item{
+			&.blog-item-1{
+				& .blog-thumb{
+					&::before{
+						background-color: rgba(60, 208, 25,.6);
+					}
+				}
+			}
+			&.blog-item-2{
+				& .blog-thumb{
+					&::before{
+						background-color: rgba(1, 84, 247,.6);
+					}
+				}
+			}
+			&.blog-item-3{
+				& .blog-content{
+					background: #eef3f9;
+					padding: 30px;
+					& span{
+						color: $theme-color;
+						font-size: 15px;
+						font-weight: 600;
+						padding-left: 40px;
+						position: relative;
+						margin-top: 15px;
+						&::before{
+							position: absolute;
+							content: '';
+							left: 0;
+							top: 50%;
+							height: 2px;
+							width: 30px;
+							transform: translateY(-50%);
+							background: $theme-color;
+						}
+					}
+				}
+			}
+			&.blog-item-4{
+				& .blog-thumb{
+					&::before{
+						background-color: rgba(25, 34, 208,.522);
+					}
+				}
+			}
+			&.blog-item-5{
+				& .blog-thumb{
+					&::before{
+						background-color: rgb(210, 34, 231);
+						opacity: 0.522;
+					}
+				}
+			}
+		}
+
+	}
+}
+
+
+.pagination-area{
+	& nav{
+		& ul{
+			& li{
+				& a{
+					height: 60px;
+					width: 60px;
+					border-radius: 50% !important;
+					text-align: center;
+					line-height: 54px;
+					padding: 0;
+					margin: 0;
+					font-size: 18px;
+					font-weight: 500;
+					color: #859aaa;
+					background: $white;
+					margin: 0 5px;
+					border: 2px solid #e4e4e5;
+					@include transition(0.3s);
+					@media #{$xs} {
+						margin: 0 2px;
+						height: 50px;
+						width: 50px;
+						line-height: 46px;
+					}
+					& span{
+						& i{
+							font-size: 22px;
+						}
+					}
+					&:hover,
+					&.active{
+						background: $theme-color;
+						color: $white;
+						border-color: $theme-color;
+						box-shadow: 0px 10px 49.5px 0.5px rgba(59, 126, 255, 0.78);
+					}
+				}
+			}
+		}
+	}
+	&.pagination-area-2{
+		& nav{
+			& ul{
+				& li{
+					& a{
+						&:hover,
+						&.active{
+							background: $theme-color-3;
+							border-color: $theme-color-3;
+							box-shadow: 0px 10px 49.5px 0.5px rgba(239, 91, 81, 0.78);
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.blog-area-2{
+	margin-top: -15px;
+	& .section-title{
+		& p{
+			padding-bottom: 48px;
+		}
+	}
+	& .blog-item{
+		position: relative;
+		& .blog-overlay{
+			position: absolute;
+			left: 0;
+			top: 0;
+			height: 100%;
+			width: 100%;
+			background-color: rgba(16, 30, 59,.85);
+			& .blog-tag{
+				position: absolute;
+				left: 30px;
+				top: 30px;
+				background: #ef5b51;
+				@media #{$xs} {
+					left: 5px;
+				}
+				@media #{$sm} {
+					left: 30px;
+				}
+				& span{
+					color: $white;
+					font-size: 14px;
+					font-weight: 600;
+					line-height: 26px;
+					padding: 0 12px;
+				}
+			}
+			& .blog-content{
+				position: absolute;
+				bottom: 25px;
+				left: 50%;
+				width: 100%;
+				transform: translateX(-50%);
+				padding: 0 30px;
+				@media #{$lg} {
+					padding: 0 15px;
+				}
+				@media #{$xs} {
+					padding: 0 5px;
+				}
+				@media #{$sm} {
+					padding: 0 30px;
+				}
+				& ul{
+					& li{
+						display: inline-block;
+						color: $white;
+						font-weight: 500;
+						@media #{$lg} {
+							font-size: 14px;
+						}
+						@media #{$xs} {
+							font-size: 14px;
+						}
+						@media #{$sm} {
+							font-size: 16px;
+						}
+						& i{
+							padding-right: 6px;
+						}
+						&:first-child{
+							margin-right: 25px;
+						}
+					}
+				}
+				& .title{
+					color: $white;
+					font-size: 20px;
+					line-height: 28px;
+					padding-top: 10px;
+					margin-bottom: -65px;
+					@include transition(0.3s);
+					& a{
+						color: $white;
+					}
+					@media #{$lg} {
+						font-size: 18px;
+					}
+					@media #{$xs} {
+						font-size: 17px;
+					}
+
+					@media #{$sm} {
+						font-size: 20px;
+					}
+				}
+				& p{
+					color: $white;
+					font-size: 14px;
+					font-weight: 500;
+					line-height: 26px;
+					padding-bottom: 18px;
+					padding-top: 10px;
+					opacity: 0;
+					visibility: hidden;
+					@include transition(0.3s);
+					@media #{$lg} {
+						font-size: 12px;
+					}
+					@media #{$xs} {
+						font-size: 13px;
+					}
+					@media #{$sm} {
+						font-size: 14px;
+					}
+
+				}
+				& > a{
+					font-size: 15px;
+					font-weight: 600;
+					color: $white;
+					& i{
+						padding-left: 6px;
+					}
+				}
+			}
+			&:hover{
+				& .blog-content{
+					& .title{
+						margin-bottom: 0;
+					}
+					& p{
+						opacity: 1;
+						visibility: visible;
+					}
+				}
+			}
+		}
+	}
+
+}
+
+
+
+.blog-3-area{
+	background: #eceff3;
+	padding-top: 87px;
+	padding-bottom: 123px;
+	& .section-title{
+		& p{
+			padding-bottom: 30px;
+		}
+		& > span{
+			font-size: 14px;
+			color: #8a8a8a;
+			line-height: 26px;
+			padding-right: 15px;
+			padding-bottom: 35px;
+		}
+		& a{
+			background: $theme-color-3;
+			border-color: $theme-color-3;
+			&:hover{
+				background: $theme-color;
+				border-color: $theme-color;
+			}
+		}
+	}
+	& .blog-item{
+		& .blog-thumb{
+			position: relative;
+			& img{
+				width: 100%;
+				padding-top: 13px;
+			}
+			& span{
+				position: absolute;
+				left: 20px;
+				top: 20px;
+				background: $theme-color-3;
+				font-size: 14px;
+				font-weight: 600;
+				color: $white;
+				line-height: 26px;
+				padding: 0 12px;
+			}
+		}
+		& .blog-content{
+			padding-top: 24px;
+			& ul{
+				& li{
+					display: inline-block;
+					font-size: 14px;
+					font-weight: 500;
+					color: $body-text;
+					& i{
+						color: $theme-color-3;
+						padding-right: 6px;
+					}
+					&:first-child{
+						margin-right: 30px;
+					}
+				}
+			}
+			& .title{
+				font-size: 18px;
+				font-weight: 700;
+				line-height: 26px;
+				padding-top: 10px;
+				padding-bottom: 15px;
+				& a{
+					color: $black;
+				}
+			}
+			& p{
+				font-size: 14px;
+				font-weight: 500;
+				color: $body-text;
+				line-height: 26px;
+				padding-bottom: 15px;
+			}
+			& > a{
+				font-size: 15px;
+				font-weight: 600;
+				color: $body-text;
+				@include transition(0.3s);
+				&:hover{
+					color: $theme-color-3;
+				}
+				& i{
+					padding-left: 6px;
+				}
+			}
+		}
+	}
+
+}

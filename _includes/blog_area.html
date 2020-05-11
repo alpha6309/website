@@ -1,0 +1,38 @@
+<section class="blog-area">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <div class="section-title text-center">
+                    <h2 class="title">Latest Post <span>Popular <span> News & Blog</span></span></h2>
+                    <p>knows About Latest News & Blog</p>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+          {% for post in site.posts limit: "3" %}
+            <div class="col-lg-4 col-md-6 col-sm-8">
+                <div class="blog-item mt-30 wow fadeIn animated" data-wow-duration="1500ms" data-wow-delay="0ms">
+                    {% if post.post_image %}
+                    <div class="blog-thumb">
+                       <a href="{{post.url}}"><img class="img-fluid" src="{{post.post_image}}" alt="{{post.title}}"/></a>
+                    </div>
+                    {% endif %}
+                    <div class="blog-content">
+                        <ul>
+                            {% if post.author %}
+                             <li><i class="fal fa-user"></i> {{post.author}}</li>
+                            {% endif %}
+                            <li><i class="fal fa-calendar-alt"></i> {{post.date | date_to_long_string}}</li>
+                        </ul>
+                        <h3 class="title"><a href="{{post.url}}">{{post.title}}</a></h3>
+                        <p>{{post.excerpt | strip_html | truncatewords: "25"}}</p>
+                        <a href="{{post.url}}">View Details <i class="fal fa-long-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+    <!--====== BLOG PART ENDS ======-->

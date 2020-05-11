@@ -1,0 +1,45 @@
+<header class="header-area">
+<div class="header-top">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-12">
+                <div class="header-top-item d-flex justify-content-between">
+                    <div class="header-left-side">
+                        <p><i class="fal fa-bells"></i> Are you looking for it services & solution provider?</p>
+                    </div>
+                    <div class="header-right-social d-flex justify-content-end align-items-center">
+                        <ul class="d-none d-lg-block">
+                            <li>
+                                <p><i class="fal fa-star"></i> Join With Us</p>
+                            </li>
+                        </ul>
+                        <ul class="d-none d-sm-block">
+                            {% if site.facebook_url %}
+                             <li><a target="__blank" href="{{site.facebook_url}}"><i class="fab fa-facebook-f"></i></a></li>
+                            {% endif %}
+                            {% if site.twitter_url %}
+                             <li><a target="__blank" href="{{site.twitter_url}}"><i class="fab fa-twitter"></i></a></li>
+                            {% endif %}
+                            {% if site.instagram_url %}
+                             <li><a target="__blank" href="{{site.instagram_url}}"><i class="fab fa-instagram"></i></a></li>
+                            {% endif %}
+                            {% if site.youtube_url %}
+                            <li><a target="__blank" href="{{site.youtube_url}}"><i class="fab fa-youtube"></i></a></li>
+                            {% endif %}
+                        </ul>
+                    </div>
+                </div> <!-- header top item -->
+            </div>
+        </div> <!-- row -->
+    </div>
+</div>
+<div class="header-nav">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                {% include navigation.html %}
+            </div>
+        </div> <!-- row -->
+    </div>
+</div>
+</header>

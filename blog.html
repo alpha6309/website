@@ -1,0 +1,72 @@
+---
+layout: default
+header_image: "/assets/images/blog_header.jpg"
+title: "Blog"
+pagination:
+  enabled: true
+---
+
+{% include page_header.html %}
+
+<!--====== BLOG PART START ======-->
+
+<section class="blog-area blog-masonry">
+<div class="container">
+    <div class="row justify-content-center">
+        {% for post in paginator.posts %}
+        <div class="col-lg-4 col-md-7 col-sm-9">
+            <div class="blog-item mt-30">
+                {% if post.post_image %}
+                <div class="blog-thumb">
+                    <a href="{{post.url}}"><img src="{{post.post_image}}" alt="{{post.title}}"></a>
+                </div>
+                {% endif %}
+                <div class="blog-content">
+                    <ul>
+                        {% if post.author %}
+                        <li><i class="fal fa-user"></i> {{post.author}}</li>
+                        {% endif %}
+                        {% if post.date %}
+                         <li><i class="fal fa-calendar-alt"></i> {{post.date | date_to_long_string}}</li>
+                        {% endif %}
+                    </ul>
+                    <h3 class="title"><a href="{{post.url}}">{{post.title}}</a></h3>
+                    <p>{{post.excerpt | strip_html | truncatewords: "25"}}</p>
+                    <a href="{{post.url}}">View Details <i class="fal fa-long-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            {% if paginator.total_pages > 1 %}
+            <div class="pagination-area d-flex justify-content-center mt-55">
+                <nav aria-label="Page navigation ">
+                  <ul class="pagination">
+                   {% if paginator.previous_page %}
+                    <li class="page-item mr-4">
+                      <a class="page-link" href="{{ paginator.previous_page_path | prepend: site.baseurl }}" aria-label="Previous">
+                        <span aria-hidden="true"><i class="fal fa-angle-left"></i></span>
+                      </a>
+                    </li>
+                    {% endif %}
+                    {% if paginator.next_page %}
+                    <li class="page-item">
+                      <a class="page-link" href="{{ paginator.next_page_path | prepend: site.baseurl }}" aria-label="Next">
+                        <span aria-hidden="true"><i class="fal fa-angle-right"></i></span>
+                      </a>
+                    </li>
+                    {% endif %}
+                  </ul>
+                </nav>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+</section>
+
+<!--====== BLOG PART ENDS ======-->
+
+

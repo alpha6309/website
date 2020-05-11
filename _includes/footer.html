@@ -1,0 +1,98 @@
+<footer class="footer-area pt-80">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="footer-logo text-center pb-45">
+                    <a href="{{site.url}}"><img src="{{site.logo_2}}" alt="{{site.title}}"/></a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="footer-widget mt-30">
+                    <div class="footer-title">
+                        <h4 class="title">About Company</h4>
+                    </div>
+                    <div class="footer-items-1">
+                        <p>Avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again</p>
+                        <ul>
+                            {% if site.facebook_url %}
+                             <li><a target="__blank" href="{{site.facebook_url}}"><i class="fab fa-facebook-f"></i></a></li>
+                            {% endif %}
+                            {% if site.twitter_url %}
+                             <li><a target="__blank" href="{{site.twitter_url}}"><i class="fab fa-twitter"></i></a></li>
+                            {% endif %}
+                            {% if site.instagram_url %}
+                             <li><a target="__blank" href="{{site.instagram_url}}"><i class="fab fa-instagram"></i></a></li>
+                            {% endif %}
+                            {% if site.youtube_url %}
+                            <li><a target="__blank" href="{{site.youtube_url}}"><i class="fab fa-youtube"></i></a></li>
+                            {% endif %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="footer-widget ml-30 mt-30">
+                    <div class="footer-title">
+                        <h4 class="title">Quick Links</h4>
+                    </div>
+                    <div class="footer-items-2 d-flex">
+                        <ul>
+                            <li><a href="#">Latest Services</a></li>
+                            <li><a href="#">Need A Career ?</a></li>
+                            <li><a href="#">Meet The Team</a></li>
+                            <li><a href="#">Setting & Privacy</a></li>
+                            <li><a href="#">Case Study</a></li>
+                            <li><a href="#">Company Fact</a></li>
+                        </ul>
+                        <ul class="ml-40">
+                            <li><a href="#">Our History</a></li>
+                            <li><a href="#">My Account</a></li>
+                            <li><a href="#">Web Security</a></li>
+                            <li><a href="#">Domain & Hosting</a></li>
+                            <li><a href="#">Server System</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-8">
+                <div class="footer-widget ml-10 mt-30">
+                    <div class="footer-title">
+                        <h4 class="title">Recent News</h4>
+                    </div>
+                    <div class="footer-items-3">
+                      {% for post in site.posts limit: "2" %}
+                        <div class="News-item d-flex mb-3">
+                            {% if post.post_image %}
+                            <div class="News-thumb">
+                                <img class="img-fluid" src="{{post.post_image}}" alt="{{post.title}}"/>
+                            </div>
+                            {% endif %}
+                            <div class="News-content">
+                                <a href="{{post.url}}">
+                                    <h5 class="title">{{post.title | truncatewords: "8"}}</h5>
+                                </a>
+                                <span>{{post.date | date_to_long_string}}</span>
+                            </div>
+                        </div>
+                       {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="footer-copyright">
+                    <span><i class="fal fa-phone-office"></i> {{site.phone_number}}</span>
+                    <p>{{site.copyright_text}}</p>
+                </div>
+                <div class="back-top">
+                    <a href="#" class="back-to-top">
+                        <i class="fa fa-angle-up"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

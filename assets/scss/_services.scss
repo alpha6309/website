@@ -1,0 +1,418 @@
+
+
+
+/*===========================
+    12.SERVICES css 
+===========================*/
+
+
+
+
+
+.services-area{
+	background: #3b7eff;
+	padding-top: 117px;
+	padding-bottom: 225px;
+	position: relative;
+	&::before{
+		position: absolute;
+		content: '';
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background-image: url(../images/services-map.png);
+		opacity: .06;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+
+	}
+	& .section-title{
+		& .title{
+			color: $white;
+			& span{
+				color: $white;
+			}
+		}
+		& p{
+			color: $white;
+		}
+
+	}
+	& .services-item{
+		background-image: url(../images/services-thumb.png);
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		position: relative;
+		z-index: 10;
+		padding: 40px 71px 45px;
+		@media #{$lg} {
+			padding: 40px 10px 45px;
+		}
+		@media #{$md} {
+			padding: 40px 45px 45px;
+		}
+		@media #{$xs} {
+			padding: 40px 0px 45px;
+		}
+		@media #{$sm} {
+			padding: 40px 120px 45px;
+		}
+		&::before{
+			position: absolute;
+			content: '';
+			left: 0;
+			top: 0;
+			height: 100%;
+			width: 100%;
+			background-color: rgb(41, 114, 255);
+			opacity: 1;
+			z-index: -1;
+			@include transition(0.3s);
+		}
+		& .title{
+			color: $white;
+			font-size: 24px;
+			line-height: 32px;
+		}
+		& > i{
+			font-size: 60px;
+			color: $white;
+			padding-top: 35px;
+			padding-bottom: 22px;
+		}
+		& p{
+			font-size: 14px;
+			font-weight: 500;
+			color: $white;
+			line-height: 26px;
+			padding-bottom: 15px;
+		}
+		& a{
+			color: $white;
+		}
+	}
+	& .services-active{
+		& .slick-center{
+			& .services-item{
+				&::before{
+					background-color: rgb(2, 80, 232);
+					opacity: 0.859;
+				}
+			}
+		}
+		& .slick-dots{
+			position: absolute;
+			bottom: -95px;
+			left: 50%;
+			transform: translateX(-50%);
+			& li{
+				display: inline-block;
+				& button{
+					background-color: transparent;
+					border: 3px solid $white;
+					border-radius: 50%;
+					height: 15px;
+					width: 15px;
+					font-size: 0;
+					margin: 0 6px;
+					@include transition(0.3s);
+				}
+				&.slick-active{
+					& button{
+						height: 20px;
+						width: 20px;
+					}
+				}
+			}
+		}
+	}
+	&.services-about{
+		background: #eef3f9;
+		padding-top: 100px;
+		padding-bottom: 130px;
+		&::before{
+			background-image: url(../images/services-map-2.png);
+			opacity: .08;
+
+		}
+		& .services-item{
+			@media #{$laptop} {
+				padding: 40px 71px 45px;
+			}
+			@media #{$lg} {
+				padding: 40px 31px 45px;
+			}
+			@media #{$md} {
+				padding: 40px 45px 45px;
+			}
+			@media #{$xs} {
+				padding: 40px 0px 45px;
+			}
+			@media #{$sm} {
+				padding: 40px 70px 45px;
+			}
+			&::before{
+				background: $white;
+			}
+			& .title{
+				color: $black;
+			}
+			& > i{
+				color: $theme-color;
+			}
+			& p{
+				color: $body-text;
+			}
+			& a{
+				color: $body-text;
+				font-size: 15px;
+				font-weight: 600;
+				@include transition(0.3s);
+				& i{
+					padding-left: 6px;
+				}
+				&:hover{
+					color: $theme-color;
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+.services-3-area{
+	background: #041d47;
+	padding-top: 116px;
+	position: relative;
+	padding-bottom: 123px;
+	&::before{
+		position: absolute;
+		content: '';
+		left: 0;
+		top: 0;
+		height: 100%;
+		width: 100%;
+		background-image: url(../images/working-line-2.png);
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		opacity: .03;
+
+	}
+	& .section-title{
+		& .title{
+			color: #a8b5cc;
+			& span{
+				color: $white;
+			}
+		}
+		& p{
+			color: #a8b5cc;
+			padding-bottom: 48px;
+		}
+	}
+	& .services-item{
+		& > i{
+			font-size: 60px;
+			color: #1a3d77;
+		}
+		& span{
+			font-size: 18px;
+			color: #b9aecb;
+			text-transform: capitalize;
+			padding-top: 32px;
+			padding-bottom: 3px;
+		}
+		& .title{
+			font-size: 22px;
+			color: $white;
+			padding-bottom: 25px;
+			@media #{$lg} {
+				font-size: 20px;
+			}
+		}
+		& p{
+			font-size: 14px;
+			color: #a8b5cc;
+			line-height: 26px;
+			padding: 0 25px 14px;
+			@media #{$lg} {
+				padding: 0 0 14px;
+			}
+		}
+		& a{
+			color: #a8b5cc;
+			font-size: 15px;
+			font-weight: 600;
+			& i{
+				padding-left: 6px;
+			}
+		}
+	}
+}
+
+
+
+
+.services-business{
+	margin-top: -29px;
+	& .container{
+		&::before{
+			position: absolute;
+			content: '';
+			left: 50%;
+			transform: translateX(-50%);
+			top: -115px;
+			width: 110%;
+			height: 145px;
+			background: $white;
+			padding-left: 115px;
+			padding-right: 115px;
+		}
+	}
+	& .section-title{
+		& p{
+			padding-bottom: 30px;
+		}
+		& > span{
+			font-size: 14px;
+			color: $body-text;
+			line-height: 28px;
+			padding-right: 30px;
+			@media #{$md} {
+				padding-right: 0;
+			}
+			@media #{$xs} {
+				padding-right: 0;
+			}
+			&.text{
+				padding-top: 27px;
+			}
+		}
+		& a{
+			margin-top: 35px;
+		}
+	}
+	& .bussiness-thumb{
+		@media #{$md} {
+			margin-top: 30px;
+		}
+		@media #{$xs} {
+			margin-top: 30px;
+		}
+		& img{
+			width: 100%;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+.services-pricing-area{
+	background: #eef3f9;
+	padding-top: 117px;
+	padding-bottom: 130px;
+	& .section-title{
+		padding-bottom: 50px;
+	}
+	& .pricing-tab{
+		padding-top: 50px;
+		padding-left: 30px;
+		padding-bottom: 250px;
+		margin-right: 2px;
+		margin-left: 2px;
+		padding-right: 20px;
+		position: relative;
+		& .nav{
+			& li{
+				& a{
+					padding: 0;
+					background-color: #fef0e5;
+					line-height: 50px;
+					color: $black;
+					padding: 0 24px;
+					border-radius: 0;
+					font-size: 15px;
+					font-weight: 600;
+					@media #{$lg} {
+						padding: 0 17px;
+					}
+					&.active{
+						background: $theme-color-2;
+						color: $white;
+					}
+				}
+			}
+		}
+		& p{
+			font-size: 16px;
+			padding-top: 15px;
+			@media #{$lg} {
+				font-size: 14px;
+			}
+		}
+		& img{
+			position: absolute;
+			right: 0;
+			bottom: 0;
+		}
+	}
+	& .pricing-item{
+		margin-left: 2px;
+		margin-right: 2px;
+		padding-top: 44px;
+		& .title{
+			font-size: 30px;
+			color: $black;
+		}
+		& p{
+			padding: 8px 30px 30px;
+			@media #{$lg} {
+				padding: 8px 10px 30px;
+			}
+			@media #{$md} {
+				padding: 8px 80px 30px;
+			}
+			@media #{$sm} {
+				padding: 8px 70px 30px;
+			}
+		}
+		& ul{
+			padding-top: 28px;
+			padding-bottom: 15px;
+			& li{
+				line-height: 35px;
+				font-size: 16px;
+				font-weight: 500;
+				color: $body-text;
+			}
+		}
+		& > span{
+			font-size: 40px;
+			color: $theme-color;
+			font-weight: 700;
+			padding-bottom: 35px;
+			& span{
+				font-size: 24px;
+				line-height: 0;
+			}
+		}
+	}
+	&.priceing-page{
+		background: #0e2b5c;
+		padding-top: 100px;
+	}
+}

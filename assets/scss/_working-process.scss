@@ -1,0 +1,273 @@
+
+
+
+/*===========================
+    7.WORKING PROCESS css 
+===========================*/
+
+
+
+
+
+
+.working-process{
+    background: #3b7eff;
+    padding-top: 117px;
+    padding-bottom: 125px;
+    position: relative;
+    z-index: 10;
+    &::before{
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background-image: url(../images/working-line.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: -1;
+        opacity: .07;
+    }
+    & .section-title{
+        & .title{
+            color: $white;
+            & span{
+                color: $white;
+            }
+        }
+        & p{
+            color: $white;
+            padding-bottom: 47px;
+        }
+    }
+    & .working-item{
+        position: relative;
+        & i{
+            height: 120px;
+            width: 120px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 120px;
+            border: 2px dashed $white;
+            color: $white;
+            font-size: 50px;
+        }
+        & .title{
+            color: $white;
+            font-size: 24px;
+            font-weight: 600;
+            padding-top: 25px;
+        }
+        & p{
+            color: $white;
+            font-size: 14px;
+            line-height: 28ox;
+            padding-top: 7px;
+        }
+        &.item-1{
+            margin-top: 80px;
+            @media #{$md} {
+                margin-top: 30px;
+            }
+            @media #{$xs} {
+                margin-top: 30px;
+            }
+
+        }
+        &.item-2{
+            margin-top: 240px;
+            @media #{$md} {
+                margin-top: 30px;
+            }
+            @media #{$xs} {
+                margin-top: 30px;
+            }
+        }
+        &.item-3{
+            margin-top: 30px;
+            @media #{$md} {
+                margin-top: 30px;
+            }
+            @media #{$xs} {
+                margin-top: 30px;
+            }
+        }
+        &.item-4{
+            margin-top: 190px;
+            @media #{$md} {
+                margin-top: 30px;
+            }
+            @media #{$xs} {
+                margin-top: 30px;
+            }
+        }
+        & .dot-1{
+            position: absolute;
+            right: -140px;
+            top: 0;
+            @media #{$md} {
+                display: none;
+            }
+            @media #{$xs} {
+                display: none;
+            }
+        }
+        & .dot-2{
+            position: absolute;
+            right: -70px;
+            top: -160px;
+            @media #{$md} {
+                display: none;
+            }
+            @media #{$xs} {
+                display: none;
+            }
+        }
+        & .dot-3{
+            position: absolute;
+            top: -140px;
+            left: -60px;
+            @media #{$md} {
+                display: none;
+            }
+            @media #{$xs} {
+                display: none;
+            }
+        }
+    }
+    & .shape-1{
+        position: absolute;
+        top: 150px;
+        left: 100px;
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        background: $white;
+        animation: scale-up-three linear 15s infinite;
+        @media #{$xs} {
+            left: 20px;
+            top: 30px;
+        }
+    }
+    & .shape-2{
+        position: absolute;
+        bottom: 50px;
+        right: 100px;
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        border: 5px solid $white;
+        animation: rotatey linear 15s infinite;
+        @media #{$xs} {
+            right: 30px;
+            bottom: 30px;
+        }
+
+    }
+    & .shape-3{
+        position: absolute;
+        top: 150px;
+        right: 100px;
+        height: 5px;
+        width: 60px;
+        background: $white;
+        transform:  rotate(-18deg);
+        animation: rotated linear 30s infinite;
+        @media #{$xs} {
+            right: 20px;
+            top: 50px;
+        }
+        &::before{
+            position: absolute;
+            content: '';
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            height: 60px;
+            width: 5px;
+            background: $white;
+        }
+        
+
+    }
+    & .shape-4{
+        position: absolute;
+        bottom: 150px;
+        left: 100px;
+        height: 5px;
+        width: 50px;
+        background: $white;
+        transform:  rotate(-18deg);
+        animation: rotated linear 30s infinite;
+        opacity: .7;
+        @media #{$xs} {
+            left: 20px;
+            bottom: 50px;
+        }
+        &::before{
+            position: absolute;
+            content: '';
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            height: 50px;
+            width: 5px;
+            background: $white;
+            opacity: .7;
+        }
+        
+
+    }
+}
+
+
+
+
+
+@keyframes rotatey {
+    0% {
+        transform: rotateY(-360deg) rotateX(-90deg);
+    }
+
+    100% {
+        transform: rotateY(360deg) rotateX(90deg);
+    }
+}
+
+
+@-webkit-keyframes rotatey {
+    0% {
+        transform: rotateY(-360deg) rotateX(-90deg);
+    }
+
+    100% {
+        transform: rotateY(360deg) rotateX(90deg);
+    }
+}
+
+
+
+
+@keyframes rotated {
+    0% {
+        transform: rotate(-360deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+@-webkit-keyframes rotated {
+    0% {
+        transform: rotate(-360deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+

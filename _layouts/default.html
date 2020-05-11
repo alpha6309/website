@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+{% include head.html %}
+<body>
+
+    <!--====== PRELOADER PART START ======-->
+
+    <div class="preloader" id="preloader">
+        <div class="three ">
+            <div class="loader" id="loader">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <!--====== PRELOADER PART START ======-->
+
+    {% include header.html %}
+    {{content}}
+    {% include call_to_action.html %}
+    {% include brands_carousel.html %}
+    {% include footer.html %}
+    {% include scripts.html %}
+</body>
+</html>

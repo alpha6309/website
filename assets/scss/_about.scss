@@ -1,0 +1,282 @@
+
+
+
+/*===========================
+    4.ABOUT css 
+===========================*/
+
+
+
+
+
+
+
+.about-area{
+	& .about-content{
+		padding-left: 30px;
+		@media #{$md} {
+			margin-top: 40px;
+		}
+		@media #{$xs} {
+			margin-top: 40px;
+			padding-left: 0;
+		}
+		& .title{
+			font-size: 40px;
+			text-transform: capitalize;
+			font-weight: 300;
+			color: #8a8a8a;
+			line-height: 55px;
+			@media #{$lg} {
+				font-size: 36px;
+			}
+			@media #{$xs} {
+				font-size: 24px;
+				line-height: 46px;
+			}
+			@media #{$sm} {
+				font-size: 40px;
+				line-height: 55px;
+			}
+			& span{
+				font-weight: 600;
+				color: $black;
+				font-size: 50px;
+				@media #{$lg} {
+					font-size: 40px;
+				}
+				@media #{$xs} {
+					font-size: 40px;
+				}
+				@media #{$sm} {
+					font-size: 46px;
+				}
+				& span{
+					font-weight: 400;
+					color: $theme-color-2;
+				}
+			}
+		}
+		& > span{
+			font-size: 20px;
+			font-weight: 500;
+			padding-top: 18px;
+			@media #{$lg} {
+				font-size: 18px;
+			}
+
+		}
+		& p{
+			font-size: 14px;
+			line-height: 26px;
+			padding-top: 30px;
+			margin-top: 30px;
+			border-top: 1px solid $border-color;
+		}
+		& ul{
+			padding-top: 35px;
+			& li{
+				display: inline-block;
+				&:last-child{
+					& a{
+						padding-left: 38px;
+						font-size: 15px;
+						font-weight: 600;
+						color: $theme-color-2;
+						@media #{$xs} {
+							padding-left: 0;
+							margin-top: 30px;
+						}
+						@media #{$sm} {
+							padding-left: 30px;
+							margin-top: 0px;
+						}
+						& i{
+							padding-left: 6px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+.about-3-area{
+	position: relative;
+	padding-bottom: 128px;
+	padding-bottom: 111px;
+	& .section-title{
+		& .title{
+			@media #{$lg} {
+				font-size: 36px;
+			}
+			& span{
+				@media #{$lg} {
+					font-size: 36px;
+				}
+				@media #{$xs} {
+					font-size: 28px;
+				}
+				@media #{$sm} {
+					font-size: 36px;
+				}
+
+				& span{
+					color: $theme-color-3;
+				}
+			}
+		}
+		& > span{
+			font-size: 14px;
+			color: #8a8a8a;
+			line-height: 26px;
+			padding-right: 40px;
+			padding-bottom: 35px;
+			@media #{$lg} {
+				padding-right: 18px;
+			}
+			@media #{$xs} {
+				padding-right: 0px;
+			}
+			@media #{$sm} {
+				padding-right: 40px;
+			}
+			& span{
+				color: $theme-color-3;
+				display: inline;
+
+			}
+		}
+		& p{
+			padding-bottom: 30px;
+			@media #{$lg} {
+				font-size: 18px;
+			}
+			@media #{$xs} {
+				font-size: 14px;
+			}
+			@media #{$sm} {
+				font-size: 20px;
+			}
+
+		}
+		& a{
+			background: $theme-color-3;
+			border-color: $theme-color-3;
+			&:hover{
+				background: $theme-color;
+				border-color: $theme-color;
+			}
+		}
+	}
+	& .about-thumb{
+		& img{
+			width: 100%;
+		}
+	}
+}
+
+
+
+
+
+
+.about-history-area{
+	background: #101e3b;
+	padding-top: 117px;
+	& .section-title{
+		padding-bottom: 50px;
+		& .title{
+			color: #8499c3;
+			& span{
+				color: $white;
+			}
+		}
+	}
+	& .history-tab-btn{
+		& .nav{
+			border-bottom: 2px solid #1a2c50;
+			& li{
+				& a{
+					padding: 0;
+					background-color: transparent;
+					padding: 0 18px;
+					line-height: 80px;
+					font-size: 20px;
+					font-weight: 600;
+					color: #8499c3;
+					position: relative;
+					@media #{$lg} {
+						padding: 0 16px;
+					}
+					@media #{$md} {
+						padding: 0 10px;
+						font-size: 15px;
+					}
+					@media #{$xs} {
+						padding: 0 10px;
+						font-size: 14px;
+					}
+					@media #{$sm} {
+						padding: 0 8px;
+						font-size: 15px;
+					}
+					&::before{
+						position: absolute;
+						content: '';
+						left: 0;
+						bottom: -2px;
+						height: 0px;
+						width: 100%;
+						background: $white;
+					}
+					&.active{
+						color: $white;
+						&::before{
+							height: 2px;
+						}
+					}
+				}
+			}
+		}
+		& .tab-content{
+			& .history-thumb{
+				& img{
+					width: 100%;
+				}
+			}
+			& .history-content {
+				@media #{$md} {
+					padding-left: 0;
+					margin-top: 30px;
+				}
+				@media #{$xs} {
+					padding-left: 0;
+					margin-top: 30px;
+				}
+				& .title{
+					color: $white;
+					font-size: 30px;
+					line-height: 40px;
+					padding-bottom: 30px;
+					@media #{$xs} {
+						font-size: 24px;
+					}
+					@media #{$sm} {
+						font-size: 30px;
+					}
+				}
+				& p{
+					color: #a6b7d8;
+					&.text{
+						padding-top: 17px;
+					}
+				}
+			}
+		}
+	}
+}
