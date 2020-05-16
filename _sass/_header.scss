@@ -146,7 +146,7 @@
 	right: 0;
 	left: 0;
     z-index: 99;
-    background: #0154f7;
+    background: $theme-color;
     @media #{$md} {
     	padding: 15px 0;
     }

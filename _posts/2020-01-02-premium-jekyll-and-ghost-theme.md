@@ -4,7 +4,7 @@ title: "Premium Jekyll And Ghost Themes"
 date: 2020-01-02 20:37:13 +0600
 tags: development
 categories: [development]
-post_image: "/assets/images/project/project-1.jpg"
+post_image: "{{site.baseurl}}/assets/images/project/project-1.jpg"
 author: "Rubel"
 ---
 
