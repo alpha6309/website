@@ -4,14 +4,14 @@ description: >- # this means to ignore newlines until "baseurl:"
  Trade - Multipurpose Business & Corporate Jekyll Template Jekyll Theme For Mobile Apps Download Landing Page And Blogging.
 baseurl: "/website" # the subpath of your site, e.g. /blog
 url: "https://hawkhero.github.io/" # the base hostname & protocol for your site, e.g. http://example.com or  https://tradejk.netlify.com
-facebook_url: "https://www.facebook.com/jekyll"
-twitter_url: "https://twitter.com/tryghost"
-github_url:  "https://github.com/TryGhost/Ghost"
-pinterest_url: "https://www.pinterest.com/rubel8525"
-linkedin_url: "https://www.linkenin.com/rubel8525"
-instagram_url: "https://www.instagram.com/rubel8525"
-youtube_url: "https://youtube.com/rubel2585"
-logo: "/assets/images/logo.png"
+facebook_url: "https://www.facebook.com/alphachildrenscripturerecitingassociation/"
+youtube_url: "https://www.youtube.com/channel/UCHetixTXWgic895R0tPfa2Q"
+#twitter_url: "https://twitter.com/tryghost"
+#github_url:  "https://github.com/TryGhost/Ghost"
+#pinterest_url: "https://www.pinterest.com/rubel8525"
+#linkedin_url: "https://www.linkenin.com/rubel8525"
+#instagram_url: "https://www.instagram.com/rubel8525"
+logo: "/assets/images/alpha-tree.png"
 logo_2: "/assets/images/footer-logo.png"
 mailchimp_list: "https://themeix.us16.list-manage.com/subscribe/post?u=307862c135e4548eecf86f389&amp;id=342411fb35"
 
