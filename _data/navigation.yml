@@ -1,36 +1,51 @@
 #Please use the main menu items under the "text"
+- text: 關於我們
+  url: /pages/關於我們
+- text: 出版品
+  url: /pages/publication/
+- text: 關於讀經
+  url: "/pages/recite/"
+- text: 事工報告
+  url: ""
+  submenu:
+  - text: "2020"
+    url: "/design/header-full-width-image/"
+  - text: "2019"
+    url: "/design/header-full-width-image/"
+- text: 線上奉獻
+  url: "http://www.101superweb.com/web/tainanalpha"
 
-- text: Home
-  url: /
-  submenu:
-  - text: Home 2
-    url: /index-2
-  - text: Home 3
-    url: index-3
-- text: About
-  url: /about
-- text: Blog
-  url: /blog
-- text: Services
-  url: /services
-- text: Pages
-  url: /
-  submenu:
-  - text: FAQ
-    url: /faq
-  - text: Pricing
-    url: /pricing
-  - text: Our Team
-    url: /team
-  - text: Our Services
-    url: /services
-  - text: Features
-    url: /features
-  - text: About Us
-    url: /about
-  - text: Contact
-    url: /contact
-  - text: 404
-    url: /404
-- text: Contact
-  url: /contact
+#- text: Home
+#  url: /
+#  submenu:
+#  - text: Home 2
+#    url: /index-2
+#  - text: Home 3
+#    url: index-3
+#- text: About
+#  url: /about
+#- text: Blog
+#  url: /blog
+#- text: Services
+#  url: /services
+#- text: Pages
+#  url: /
+#  submenu:
+#  - text: FAQ
+#    url: /faq
+#  - text: Pricing
+#    url: /pricing
+#  - text: Our Team
+#    url: /team
+#  - text: Our Services
+#    url: /services
+#  - text: Features
+#    url: /features
+#  - text: About Us
+#    url: /about
+#  - text: Contact
+#    url: /contact
+#  - text: 404
+#    url: /404
+#- text: Contact
+#  url: /contact
