@@ -1,7 +1,6 @@
 title: "台南市阿爾法兒童讀經協會網站"
 email: "alpha6309@gmail.com"
-description: >- # this means to ignore newlines until "baseurl:"
- 推廣聖經讀經教育
+description: 推廣聖經讀經教育
 baseurl: "/website" # the subpath of your site, e.g. /blog
 url: "https://hawkhero.github.io/" # the base hostname & protocol for your site, e.g. http://example.com or  https://tradejk.netlify.com
 facebook_url: "https://www.facebook.com/alphachildrenscripturerecitingassociation/"
@@ -105,3 +104,6 @@ feed:
 sass:
  sass_dir: _sass
  style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
+
+# Google Analytics
+google_analytics: UA-54180272-2
