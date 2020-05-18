@@ -1,7 +1,7 @@
-title: "Trade -  Multipurpose Business & Corporate Jekyll Template"
-email: "hawkhero@gmail.com"
+title: "台南市阿爾法兒童讀經協會網站"
+email: "alpha6309@gmail.com"
 description: >- # this means to ignore newlines until "baseurl:"
- Trade - Multipurpose Business & Corporate Jekyll Template Jekyll Theme For Mobile Apps Download Landing Page And Blogging.
+ 推廣聖經讀經教育
 baseurl: "/website" # the subpath of your site, e.g. /blog
 url: "https://hawkhero.github.io/" # the base hostname & protocol for your site, e.g. http://example.com or  https://tradejk.netlify.com
 facebook_url: "https://www.facebook.com/alphachildrenscripturerecitingassociation/"
@@ -12,15 +12,13 @@ youtube_url: "https://www.youtube.com/channel/UCHetixTXWgic895R0tPfa2Q"
 #linkedin_url: "https://www.linkenin.com/rubel8525"
 #instagram_url: "https://www.instagram.com/rubel8525"
 logo: "/assets/images/alpha-tree.png"
-logo_2: "/assets/images/footer-logo.png"
 mailchimp_list: "https://themeix.us16.list-manage.com/subscribe/post?u=307862c135e4548eecf86f389&amp;id=342411fb35"
 
 permalink: "/:title"
 
-copyright_text: "Copyright ©2020. All Rights Reserved"
-phone_number: "+ 012 (345) 67899"
-cover_image: "/assets/images/page-title-bg.jpg"
-
+copyright_text: "台南市阿爾法兒童讀經協會版權所有 Copyright ©2020. All Rights Reserved"
+phone_number: "06-2761502"
+address: "台南市"
 
 # Build settings
 markdown: kramdown
