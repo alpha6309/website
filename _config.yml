@@ -1,4 +1,4 @@
-title: "台南市阿爾法兒童讀經協會網站"
+title: "台南市阿爾法兒童讀經協會"
 email: "alpha6309@gmail.com"
 description: 推廣聖經讀經教育
 baseurl: "/website" # the subpath of your site, e.g. /blog
@@ -17,7 +17,7 @@ permalink: "/:title"
 
 copyright_text: "台南市阿爾法兒童讀經協會版權所有 Copyright ©2020. All Rights Reserved"
 phone_number: "06-2761502"
-address: "台南市"
+address: "台南市東區東門路二段299-B1"
 
 # Build settings
 markdown: kramdown
