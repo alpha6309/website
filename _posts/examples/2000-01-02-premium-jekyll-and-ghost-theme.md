@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Premium Jekyll And Ghost Themes"
-date: 2020-01-02 20:37:13 +0600
+date: 2000-01-02 20:37:13 +0600
 tags: development
 categories: [development]
 post_image: "assets/images/project/project-1.jpg"

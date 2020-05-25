@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "Premium Jekyll And Ghost Themes"
-date: 2020-01-02 20:37:13 +0600
+title: "Free WordPress And HTML themes"
+date: 2000-01-01 20:37:13 +0600
 tags: development
 categories: [development]
-post_image: "assets/images/project/project-1.jpg"
+post_image: "/assets/images/project/project-2.jpg"
 author: "Rubel"
 ---
 
