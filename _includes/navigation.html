@@ -25,11 +25,11 @@
                                 {% endif %}
                                  
                                  <li class="nav-item {{active}}">
-                                     <a class="nav-link" href="{{link.url}}">{{link.text}}{% if link.submenu %}  <i class="fal fa-angle-down"></i>{% endif %}</a>
+                                     <a class="nav-link" href="{{site.baseurl}}{{link.url}}">{{link.text}}{% if link.submenu %}  <i class="fal fa-angle-down"></i>{% endif %}</a>
                                     {% if link.submenu %}
                                     <ul class="sub-menu">
                                         {% for sublink in link.submenu %}
-                                        <li><a class="nav-link" href="{{sublink.url}}">{{sublink.text}}</a></li>
+                                        <li><a class="nav-link" href="{{site.baseurl}}{{sublink.url}}">{{sublink.text}}</a></li>
                                         {% endfor %}
                                     </ul>
                                     {% endif %}
