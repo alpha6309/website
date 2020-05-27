@@ -1,17 +1,17 @@
 #Please use the main menu items under the "text"
 - text: 關於我們
-  url: "/pages/關於我們"
+  url: "pages/關於我們"
 - text: 出版品
-  url: "/pages/出版品"
+  url: "pages/出版品"
 - text: 關於讀經
-  url: "/pages/關於讀經"
+  url: "pages/關於讀經"
 - text: 事工報告
   url: ""
   submenu:
   - text: "2019"
-    url: "/pages/report/2019年阿爾法兒童讀經協會事工報告.pdf"
+    url: "pages/report/2019年阿爾法兒童讀經協會事工報告.pdf"
   - text: "2018"
-    url: "/pages/report/2018"
+    url: "pages/report/2018"
 - text: 線上奉獻
   url: "http://www.101superweb.com/web/tainanalpha"
 
