@@ -9,14 +9,14 @@
     </div>
     <div class="blog-news white-bg mt-50">
         <div class="blog-title">
-            <h3 class="title">Recent News</h3>
+            <h3 class="title">最新消息</h3>
         </div>
         {% for post in site.posts limit: "3" %}
         <div class="blog-news-item {% if forloop.index == 3 %} none {% endif %}">
             <div class="item">
                 <a href="{{post.url}}"><h5 class="title">{{post.title | truncatewords: 4}}</h5></a>
                 <span>{{post.date | date_to_long_string}}</span>
-                <a href="{{post.url}}"><img src="{{post.post_image}}" alt="{{post.title}}"/></a>
+                <a href="{{post.url}}"><img src="{{post.post_image}}" alt="{{post.title}}" width="50px"/></a>
             </div>
         </div>
         {% endfor %}
@@ -24,7 +24,7 @@
     </div>
     <div class="blog-list white-bg mt-50">
         <div class="blog-title">
-            <h3 class="title">Category</h3>
+            <h3 class="title">文章分類</h3>
         </div>
         <div class="blog-list-item">
             <ul>
@@ -44,18 +44,18 @@
     </div>
     <div class="blog-list white-bg mt-50">
         <div class="blog-title">
-            <h3 class="title">Populer Tag</h3>
+            <h3 class="title">熱門標籤</h3>
         </div>
         <div class="blog-tag text-capitalize">
             {{site | tag_cloud}}
         </div>
     </div>
     <div class="blog-add-area mt-55">
-        <img src="/assets/images/blog-add.jpg" alt="add">
+        <img src="/assets/images/bible-flower.jpg" alt="">
         <div class="add-overlay">
-            <h3 class="title">Work <br> Together</h3>
-            <p>Bur wemust ipsum dolor sit amet  consectetur adipisicing elit sed eius-mod tempor incididunt ut labore</p>
-            <a class="main-btn main-btn-2" href="#">Contact Now <i class="fal fa-angle-double-right"></i></a>
+            <h3 class="title">申命記 <br> 6:6-9</h3>
+            <p>我今日所吩咐你的話都要記在心上，也要殷勤教訓你的兒女。無論你坐在家裡，行在路上，躺下，起來，都要談論。也要繫在手上為記號，戴在額上為經文；又要寫在你房屋的門框上，並你的城門上</p>
+<!--            <a class="main-btn main-btn-2" href="#">Contact Now <i class="fal fa-angle-double-right"></i></a>-->
         </div>
     </div>
 </div>
