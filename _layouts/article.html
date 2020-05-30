@@ -1,5 +1,7 @@
 ---
+# based on layout: post
 layout: default
+
 ---
 
 {% include page_header.html %}
@@ -14,21 +16,14 @@ layout: default
                         </div>
                     </div>
                     <div class="blog-sharing d-block d-sm-flex justify-content-between">
-                        <div class="blog-tag">   
+<!--
+                        <div class="blog-tag">
                             <ul>
                                 <li><span>標籤: </span></li>
-<!--                                <li><a href="#">IT Services,</a></li>-->
-<!--                                <li><a href="#">Technology,</a></li>-->
-<!--                                <li><a href="#">Services</a></li>-->
                             </ul>
                         </div>
-                        <div class="blog-social">
-                            <ul>
-                                <li> <span>分享</span></li>
-                                <li> <a href="#"><i class="fab fa-facebook-f"></i></a></li>
-<!--                                <li> <a href="#"><i class="fab fa-twitter"></i></a></li>-->
-                            </ul>
-                        </div>
+-->
+                        {% include social_share.html %}
                     </div>
                 </div>
             </div>
