@@ -141,11 +141,6 @@
 
 
 .header-nav{
-	position: absolute;
-	top: 50px;
-	right: 0;
-	left: 0;
-    z-index: 99;
     background: $theme-color;
     @media #{$md} {
     	padding: 15px 0;
