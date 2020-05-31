@@ -7,6 +7,12 @@
 圖片目錄，儘量以子目錄分類圖片
 * /posts
 最新活動消息
+* /posts/testimony
+讀經見證
+* /posts/jewish
+猶太教育
+
+
 
 # 設定
 ## 選單
