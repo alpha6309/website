@@ -91,10 +91,10 @@ tag_page_dir: tag
 tag_permalink_style: pretty
 
 jekyll-archives:
-  enabled: all
+  enabled:
+    - categories
   layout: category
-  permalinks:
-    category: '/category/:name/'
+# e.g. link is `/category/testimony/
 
 feed:
   collections:
