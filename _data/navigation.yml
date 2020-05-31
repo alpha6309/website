@@ -8,6 +8,8 @@
   submenu:
   - text: 讀經見證
     url: "/category/見證/"
+- text: 猶太教育
+  url: "/category/猶太教育/"
 - text: 事工報告
   url: ""
   submenu:
@@ -15,8 +17,8 @@
     url: "/pages/report/2019年阿爾法兒童讀經協會事工報告.pdf"
   - text: "2018"
     url: "/pages/report/2018年阿爾法兒童讀經協會事工報告.pdf"
-- text: 線上奉獻
-  url: "http://www.101superweb.com/web/tainanalpha"
+#- text: 線上奉獻
+#  url: "http://www.101superweb.com/web/tainanalpha"
 
 #- text: Home
 #  url: /
