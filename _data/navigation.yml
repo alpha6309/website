@@ -7,7 +7,7 @@
   url: "/pages/關於讀經"
   submenu:
   - text: 讀經見證
-    url: "/category/testimony/"
+    url: "/category/見證/"
 - text: 事工報告
   url: ""
   submenu:
