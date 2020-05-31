@@ -14,7 +14,7 @@
                 <div class="blog-item mt-30 wow fadeIn animated" data-wow-duration="1500ms" data-wow-delay="0ms">
                     {% if post.post_image %}
                     <div class="blog-thumb">
-                       <a href="{{post.url}}"><img class="img-fluid" src="{{post.post_image}}" loading="lazy" alt="{{post.title}}"/></a>
+                       <a href="{{post.url}}"><img class="img-fluid" src="{{site.baseurl}}{{post.post_image}}" loading="lazy" alt="{{post.title}}"/></a>
                     </div>
                     {% endif %}
                     <div class="blog-content">
