@@ -14,7 +14,7 @@
                 <div class="blog-item mt-30 wow fadeIn animated" data-wow-duration="1500ms" data-wow-delay="0ms">
                     {% if post.post_image %}
                     <div class="blog-thumb">
-                       <a href="{{post.url}}"><img class="img-fluid" src="{{site.baseurl}}{{post.post_image}}" loading="lazy" alt="{{post.title}}"/></a>
+                       <a href="{{site.baseurl}}{{post.url}}"><img class="img-fluid" src="{{site.baseurl}}{{post.post_image}}" loading="lazy" alt="{{post.title}}"/></a>
                     </div>
                     {% endif %}
                     <div class="blog-content">
@@ -24,9 +24,9 @@
 <!--                            {% endif %}-->
                             <li><i class="fal fa-calendar-alt"></i> {{post.date | date: "%Y/%m/%d"}}</li>
                         </ul>
-                        <h3 class="title"><a href="{{post.url}}">{{post.title}}</a></h3>
+                        <h3 class="title"><a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a></h3>
                         <p>{{post.excerpt | strip_html | truncatewords: "25"}}</p>
-                        <a href="{{post.url}}">詳情 <i class="fal fa-long-arrow-right"></i></a>
+                        <a href="{{site.baseurl}}{{post.url}}">詳情 <i class="fal fa-long-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
