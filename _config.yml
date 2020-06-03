@@ -90,11 +90,16 @@ tag_page_layout: tag_page
 tag_page_dir: tag
 tag_permalink_style: pretty
 
-jekyll-archives:
-  enabled:
-    - categories
-  layout: category
+# 根據 https://pages.github.com/versions/ github pages 不支援 jekyll-archives
+#jekyll-archives:
+#  enabled:
+#    - categories
+#  layout: category
 # e.g. link is `/category/testimony/
+
+collections:
+  jewish:
+    output: true
 
 feed:
   collections:
