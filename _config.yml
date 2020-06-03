@@ -98,6 +98,8 @@ tag_permalink_style: pretty
 # e.g. link is `/category/testimony/
 
 collections:
+  introduction:
+    output: true
   jewish:
     output: true
   testimony:
