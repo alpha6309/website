@@ -1,16 +1,16 @@
 # 網站維護說明
 
 # 目錄說明
-* /pages
+* [/pages](/pages)
 主要頁面
-* /assets/images
+* [/assets/images](/assets/images)
 圖片目錄，儘量以子目錄分類圖片
-* /posts
+* [/posts](/posts)
 最新活動消息
-* /posts/testimony
-讀經見證
-* /posts/jewish
+* [/_jewish](/_jewish)
 猶太教育
+* [/_testimony](/_testimony)
+讀經見證
 
 
 
