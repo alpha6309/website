@@ -100,6 +100,8 @@ tag_permalink_style: pretty
 collections:
   jewish:
     output: true
+  testimony:
+    output: true
 
 feed:
   collections:

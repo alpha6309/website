@@ -4,10 +4,11 @@
 - text: 出版品
   url: "/pages/出版品"
 - text: 關於讀經
-  url: "/pages/關於讀經"
   submenu:
+  - text: 理論實務
+    url: "/pages/理論實務/"
   - text: 讀經見證
-    url: "/category/見證/"
+    url: "/pages/讀經見證/"
 - text: 猶太教育
   url: "/pages/jewish/"
 - text: 事工報告
