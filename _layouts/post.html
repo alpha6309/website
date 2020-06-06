@@ -1,9 +1,10 @@
 ---
 layout: default
+header_image: "/assets/images/west-wall.jpg"
 ---
 
 {% include page_header.html %}
-<section class="blog-standard-area blog-details-area pt-100 pb-130">
+<section class="blog-standard-area blog-details-area pt-20 pb-130">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-8">
@@ -24,28 +25,21 @@ layout: default
                             </ul>
                         </div>
 -->
-                        <div class="blog-social">
-                            <ul>
-                                <li> <span>Share Now</span></li>
-                                <li> <a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                <li> <a href="#"><i class="fab fa-twitter"></i></a></li>
-                                <li> <a href="#"><i class="fab fa-google"></i></a></li>
-                            </ul>
-                        </div>
+                        {% include social_share.html %}
                     </div>
                     <div class="blog-story">
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="blog-story-1">
 								  {% if page.previous.url %}
-								     <h4 class="title"><a class="prev text-white" href="{{page.previous.url}}">{{page.previous.title}}</a></h4>
+								     <h4 class="title"><a class="prev text-white" href="{{site.baseurl}}{{page.previous.url}}">{{page.previous.title}}</a></h4>
 								  {% endif %}
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="blog-story-1 blog-story-1">
 								  {% if page.next.url %}
-								     <h4 class="title"><a class="prev text-white" href="{{page.next.url}}">{{page.next.title}}</a></h4>
+								     <h4 class="title"><a class="prev text-white" href="{{site.baseurl}}{{page.next.url}}">{{page.next.title}}</a></h4>
 								  {% endif %}
                                 </div>
                             </div>
