@@ -1,7 +1,7 @@
 ---
 layout: default
-header_image: "/assets/images/team_header.jpg"
-title: "第七屆理監事"
+post_image: "/assets/images/team_header.jpg"
+title: "服事團隊"
 ---
 
 {% include page_header.html %}
@@ -9,11 +9,11 @@ title: "第七屆理監事"
 <section class="team-2-area about-team team-page">
     <div class="container">
         <div class="row justify-content-center">
-            {% for director in site.data.directors %}
+            {% for member in site.data.team %}
             <div class="col-lg-3 col-md-6 col-sm-8">
                 <div class="team-item mt-40">
                     <div class="team-thumb">
-                        <img src="{{site.baseurl}}/assets/images/headshot/{{director.name}}.png" alt="{{director.name}}">
+                        <img src="{{site.baseurl}}/assets/images/headshot/陳克奇.png" alt="{{member.name}}">
                         <ul>
                             <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
 <!--
@@ -23,8 +23,8 @@ title: "第七屆理監事"
                         </ul>
                     </div>
                     <div class="team-content text-center">
-                        <h3 class="title">{{director.name}}</h3>
-                        <span>{{director.description}}</span>
+                        <h3 class="title">{{member.name}}</h3>
+                        <span>{{member.description}}</span>
                     </div>
                 </div>
             </div>
