@@ -1,3 +1,10 @@
+---
+layout: post
+title: "主禱文的真諦"
+date: 2010-03-18 00:00:00 +0800
+categories: [jewish]
+---
+
 
 # 五福v.s八福
 
