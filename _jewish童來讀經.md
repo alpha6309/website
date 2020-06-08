@@ -1,3 +1,10 @@
+---
+layout: post
+title: "童來讀經"
+date: 2010-03-18 00:00:00 +0800
+categories: [jewish]
+---
+
 # 童來讀經
 
  
