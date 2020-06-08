@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "童來讀經"
-date: 2010-03-18 00:00:00 +0800
+date: 2013-10-08 00:00:00 +0800
 categories: [jewish]
 ---
 
