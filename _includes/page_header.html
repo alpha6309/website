@@ -1,4 +1,5 @@
-<section class="banner-area page-title bg_cover" style="background-image: url({% if layout.header_image %} {{site.baseurl}}{{layout.header_image}} {% else if page.post_image %}{{site.baseurl}}{{page.post_image}} {% endif %});">
+<section class="banner-area page-title bg_cover"
+         style="background-image: url({% if page.post_image %} {{site.baseurl}}{{page.post_image}} {% else if layout.header_image %}{{site.baseurl}}{{layout.header_image}} {% endif %});">
     <div class="banner-bg">
         <div class="container">
             <div class="row">
