@@ -13,9 +13,11 @@ title: "事工團隊"
             <div class="col-lg-3 col-md-6 col-sm-8">
                 <div class="team-item mt-40">
                     <div class="team-thumb">
-                        <img src="{{site.baseurl}}/assets/images/headshot/陳克奇.png" alt="{{member.name}}">
+                        <img src="{{site.baseurl}}/assets/images/headshot/{{member.headshot}}" alt="{{member.name}}">
                         <ul>
-                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            {% if member.facebook %}
+                            <li><a href="{{member.facebook}}"><i class="fab fa-facebook-f"></i></a></li>
+                            {% endif %}
 <!--
                             <li><a href="#"><i class="fab fa-twitter"></i></a></li>
                             <li><a href="#"><i class="fab fa-instagram"></i></a></li>
