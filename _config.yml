@@ -5,6 +5,8 @@ baseurl: "/website" # the subpath of your site, e.g. /blog
 url: "https://alpha6309.github.io/" # the base hostname & protocol for your site, e.g. http://example.com or  https://tradejk.netlify.com
 facebook_url: "https://www.facebook.com/alphachildrenscripturerecitingassociation/"
 youtube_url: "https://www.youtube.com/channel/UCHetixTXWgic895R0tPfa2Q"
+# 線上捐款
+donation_url: https://p.ecpay.com.tw/A6E53
 #twitter_url: "https://twitter.com/tryghost"
 #github_url:  "https://github.com/TryGhost/Ghost"
 #pinterest_url: "https://www.pinterest.com/rubel8525"
