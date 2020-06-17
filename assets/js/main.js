@@ -307,15 +307,17 @@ $(function() {
     });
     
     //===== counter up
+    /*
     $('.counter').counterUp({
         delay: 10,
         time: 2000
     });
+    */
     
 
 
     //===== niceSelect js
-    $('select').niceSelect();
+//    $('select').niceSelect();
 
 
 
