@@ -1,6 +1,20 @@
 # 首頁事工簡介
 - name: 出版聖經朗讀本與工具 #名稱
-  image:  # 簡介圖片
-  abstract:  # 一句話摘要本事工
-  description: "" # 說明
-  url:  # 介紹頁面
+  image:  "/assets/images/books/創世記（上）-s.jpg" # 簡介圖片
+  abstract: 適合孩童與銀髮族的大字注音版 # 一句話摘要本事工
+  description: "我們致力於出版各種聖經朗讀本，特點是字體大、附注音、紙質較厚，孩子不易翻破" # 說明
+  url:  /pages/出版品
+  icon: fa-bible
+- name: 聖經朗誦節
+  image:  "/assets/images/project/2018聖經朗誦比賽.jpg"
+  abstract: 一年一度聖經朗誦比賽
+  description: "不論哪個年齡都可以參加，激勵你將平常操練的成果展現出來，互相觀摩學習"
+  icon: fa-cross
+- name: 神國教育論壇
+  abstract: 以色列猶太裔柏偉志牧師聖經講座
+  description: "來自以色列的柏偉志 、底波拉牧師夫婦是妥拉資源國際中心負責人，其對妥拉及教育的熱忱開啟許多父母及兄姐對聖經真理的認識"
+  icon: fa-star-of-david
+#- name: 讀經說明會
+#  abstract: 說明如何帶孩子讀經 # 一句話摘要本事工
+#  description: "歡迎邀請我們去分享讀經的理念與實務，可以是10分鐘或1小時"
+#  icon:

@@ -11,48 +11,31 @@
                 </div>
             </div>
             <div class="row justify-content-center">
+                {% for project in site.data.projects %}
+                    {% assign url = "/pages/" | append: {{project.name}} %}
+                    {% if project.url %}
+                        {% assign url = project.url %}
+                    {% endif %}
+
+                    {% assign image = "/assets/images/project/" | append: {{project.name}} | append: ".jpg" %}
+                    {% if project.image %}
+                        {% assign image = project.image %}
+                    {% endif %}
                 <div class="col-lg-4 col-md-7 col-sm-9">
                     <div class="project-case-item mt-30">
                         <div class="project-case-thumb">
-                            <a href="{{site.baseurl}}/pages/出版品"><img src="{{site.baseurl}}/assets/images/books/創世記（上）-s.jpg" alt=""></a>
-                            <i class="fal fa-bible"></i>
-                        </div>
-                        <div class="project-case-content text-center">
-                           <img src="{{site.baseurl}}/assets/images/project-shadow.png" alt="">
-                            <a href="{{site.baseurl}}/pages/出版品"><h4 class="title">出版聖經朗讀本與工具</h4></a>
-                            <span>適合孩童與銀髮族的大字注音版</span>
-                            <p>我們致力於出版各種聖經朗讀本，特點是字體大、附注音、紙質較厚，孩子不易翻破</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-7 col-sm-9">
-                    <div class="project-case-item mt-30">
-                        <div class="project-case-thumb">
-                            <img src="{{site.baseurl}}/assets/images/project/2018聖經朗誦比賽.jpg" alt="">
-                            <i class="fal fa-cross"></i>
+                            <a href="{{site.baseurl}}{{url}}"><img src="{{site.baseurl}}{{image}}" alt=""></a>
+                            <i class="fal {{project.icon}}"></i>
                         </div>
                         <div class="project-case-content text-center">
                             <img src="{{site.baseurl}}/assets/images/project-shadow.png" alt="">
-                            <h4 class="title">聖經朗誦節</h4>
-                            <span>一年一度聖經朗誦比賽</span>
-                            <p>不論哪個年齡都可以參加，激勵你將平常操練的成果展現出來，互相觀摩學習</p>
+                            <a href="{{site.baseurl}}{{url}}"><h4 class="title">{{project.name}}</h4></a><br/>
+                            <span>{{project.abstract}}</span>
+                            <p>{{project.description}}</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-7 col-sm-9">
-                    <div class="project-case-item mt-30">
-                        <div class="project-case-thumb">
-                            <img src="{{site.baseurl}}/assets/images/project/神國教育論壇.jpg" alt="">
-                            <i class="fal fa-star-of-david"></i>
-                        </div>
-                        <div class="project-case-content text-center">
-                            <img src="{{site.baseurl}}/assets/images/project-shadow.png" alt="">
-                            <h4 class="title">神國教育論壇</h4>
-                            <span>以色列猶太裔柏偉志牧師聖經講座</span>
-                            <p>來自以色列的柏偉志 、底波拉牧師夫婦是妥拉資源國際中心負責人，其對妥拉及教育的熱忱開啟許多父母及兄姐對聖經真理的認識</p>
-                        </div>
-                    </div>
-                </div>
+                {% endfor %}
             </div>
         </div>
     </section>
