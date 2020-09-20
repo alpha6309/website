@@ -30,18 +30,21 @@ header_image: "/assets/images/west-wall.jpg"
                     <div class="blog-story">
                         <div class="row">
                             <div class="col-lg-6">
-                                <div class="blog-story-1">
-								  {% if page.previous.url %}
-								     <h4 class="title"><a class="prev text-white" href="{{site.baseurl}}{{page.previous.url}}">{{page.previous.title}}</a></h4>
-								  {% endif %}
+                                    {% if page.next.url %}
+                                <div class="blog-story-1 blog-story-1">
+                                    <h4 class="title"><a class="prev text-white" href="{{site.baseurl}}{{page.next.url}}"><i class="fas fa-arrow-circle-left"></i> {{page.next.title}}</a></h4>
                                 </div>
+                                    {% endif %}
                             </div>
                             <div class="col-lg-6">
-                                <div class="blog-story-1 blog-story-1">
-								  {% if page.next.url %}
-								     <h4 class="title"><a class="prev text-white" href="{{site.baseurl}}{{page.next.url}}">{{page.next.title}}</a></h4>
-								  {% endif %}
+                                    {% if page.previous.url %}
+                                <div class="blog-story-1">
+                                    <h4 class="title">
+                                        <a class="prev text-white" href="{{site.baseurl}}{{page.previous.url}}">{{page.previous.title}}
+                                            <i class="fas fa-arrow-circle-right"></i></a>
+                                    </h4>
                                 </div>
+                                    {% endif %}
                             </div>
                         </div>
                     </div>
