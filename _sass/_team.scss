@@ -207,6 +207,9 @@
         }
     }
     & .team-item{
+        width: 250px;
+        margin-left: auto;
+        margin-right: auto;
         & .team-thumb{
             position: relative;
             & img{
