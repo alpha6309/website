@@ -3,6 +3,7 @@ email: "alpha6309@gmail.com"
 description: 推廣聖經讀經教育
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://www.alpha.org.tw/" # the base hostname & protocol for your site, e.g. http://example.com or  https://tradejk.netlify.com
+image_base: "/assets/images/"
 facebook_url: "https://www.facebook.com/alphachildrenscripturerecitingassociation/"
 youtube_url: "https://www.youtube.com/channel/UCHetixTXWgic895R0tPfa2Q"
 # 線上捐款
