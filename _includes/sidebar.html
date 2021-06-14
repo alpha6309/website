@@ -18,7 +18,7 @@
             <div class="item">
                 <a href="{{site.baseurl}}{{post.url}}"><h5 class="title">{{post.title | truncatewords: 4}}</h5></a>
                 <span>{{post.date | date_to_long_string}}</span>
-                <a href="{{site.baseurl}}{{post.url}}"><img src="{{site.baseurl}}{{post.post_image}}" alt="{{post.title}}" width="50px" loading="lazy"/></a>
+                <a href="{{site.baseurl}}{{post.url}}"><img src="{{site.image_base}}{{post.post_image}}.jpg" alt="{{post.title}}" width="50px" loading="lazy"/></a>
             </div>
         </div>
         {% endfor %}
