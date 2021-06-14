@@ -1,10 +1,15 @@
 <style>
+{% if page.post_image %}
+    {% assign image_name = page.post_image %}
+{% else %}
+    {% assign image_name = layout.header_image %}
+{% endif %}
 .bg_cover {
-        --bg-url: url({{site.image_base}}books/{{page.post_image}}-s.jpg);
+        --bg-url: url({{site.image_base}}{{image_name}}-s.jpg);
     }
 @media screen and (min-width: 800px) {
     .bg_cover {
-        --bg-url: url({{site.image_base}}books/{{page.post_image}}.jpg);
+        --bg-url: url({{site.image_base}}{{image_name}}.jpg);
     }
 }
 </style>
