@@ -43,3 +43,7 @@ date: 2019-05-28 00:00:00 +0800
 ```
 ## 新增消息
 複製一篇現有文章，修改內容以及前置設定的中的 title、date，日期越近的會排在越左邊。
+
+
+# 縮小 CSS
+為增進網站載入速度，用 [purgecss](https://purgecss.com/CLI.html) 縮小 css 檔案，它會透過分析既有 HTML，移除沒用到的 css selector，只留下用到的，因此減小檔案。經過縮減的檔名都附加 `required`，例如 `bootstrap.required.css`

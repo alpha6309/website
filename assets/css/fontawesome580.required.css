@@ -1,0 +1,168 @@
+/*!
+ * Font Awesome Pro 5.8.0 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license (Commercial License)
+ */
+.fa,
+.fas,
+.far,
+.fal,
+.fab {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1; }
+
+.fa-fw {
+  text-align: center;
+  width: 1.25em; }
+
+@keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+/* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
+readers do not read off random characters that represent icons */
+
+.fa-angle-double-right:before {
+  content: "\f101"; }
+
+.fa-angle-down:before {
+  content: "\f107"; }
+
+.fa-angle-up:before {
+  content: "\f106"; }
+
+.fa-bible:before {
+  content: "\f647"; }
+
+.fa-calendar-alt:before {
+  content: "\f073"; }
+
+.fa-clock:before {
+  content: "\f017"; }
+
+.fa-envelope:before {
+  content: "\f0e0"; }
+
+.fa-envelope-open:before {
+  content: "\f2b6"; }
+
+.fa-facebook:before {
+  content: "\f09a"; }
+
+.fa-facebook-f:before {
+  content: "\f39e"; }
+
+.fa-file:before {
+  content: "\f15b"; }
+
+.fa-fingerprint:before {
+  content: "\f577"; }
+
+.fa-globe-stand:before {
+  content: "\f5f6"; }
+
+.fa-google:before {
+  content: "\f1a0"; }
+
+.fa-google-plus-g:before {
+  content: "\f0d5"; }
+
+.fa-instagram:before {
+  content: "\f16d"; }
+
+.fa-layer-plus:before {
+  content: "\f5ff"; }
+
+.fa-linkedin:before {
+  content: "\f08c"; }
+
+.fa-lock-open-alt:before {
+  content: "\f3c2"; }
+
+.fa-long-arrow-right:before {
+  content: "\f178"; }
+
+.fa-map-marker-alt:before {
+  content: "\f3c5"; }
+
+.fa-paper-plane:before {
+  content: "\f1d8"; }
+
+.fa-pen-alt:before {
+  content: "\f305"; }
+
+.fa-phone:before {
+  content: "\f095"; }
+
+.fa-phone-office:before {
+  content: "\f67d"; }
+
+.fa-quote-right:before {
+  content: "\f10e"; }
+
+.fa-search:before {
+  content: "\f002"; }
+
+.fa-star:before {
+  content: "\f005"; }
+
+.fa-twitter:before {
+  content: "\f099"; }
+
+.fa-user:before {
+  content: "\f007"; }
+
+.fa-youtube:before {
+  content: "\f167"; }
+@font-face {
+  font-family: 'Font Awesome 5 Brands';
+  font-style: normal;
+  font-weight: normal;
+  font-display: auto;
+  src: url("../fonts/fa-brands-400.eot");
+  src: url("../fonts/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("../fonts/fa-brands-400.woff2") format("woff2"), url("../fonts/fa-brands-400.woff") format("woff"), url("../fonts/fa-brands-400.ttf") format("truetype"), url("../fonts/fa-brands-400.svg#fontawesome") format("svg"); }
+
+.fab {
+  font-family: 'Font Awesome 5 Brands'; }
+@font-face {
+  font-family: 'Font Awesome 5 Pro';
+  font-style: normal;
+  font-weight: 300;
+  font-display: auto;
+  src: url("../fonts/fa-light-300.eot");
+  src: url("../fonts/fa-light-300.eot?#iefix") format("embedded-opentype"), url("../fonts/fa-light-300.woff2") format("woff2"), url("../fonts/fa-light-300.woff") format("woff"), url("../fonts/fa-light-300.ttf") format("truetype"), url("../fonts/fa-light-300.svg#fontawesome") format("svg"); }
+
+.fal {
+  font-family: 'Font Awesome 5 Pro';
+  font-weight: 300; }
+@font-face {
+  font-family: 'Font Awesome 5 Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-display: auto;
+  src: url("../fonts/fa-regular-400.eot");
+  src: url("../fonts/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("../fonts/fa-regular-400.woff2") format("woff2"), url("../fonts/fa-regular-400.woff") format("woff"), url("../fonts/fa-regular-400.ttf") format("truetype"), url("../fonts/fa-regular-400.svg#fontawesome") format("svg"); }
+
+.far {
+  font-family: 'Font Awesome 5 Pro';
+  font-weight: 400; }
+@font-face {
+  font-family: 'Font Awesome 5 Pro';
+  font-style: normal;
+  font-weight: 900;
+  font-display: auto;
+  src: url("../fonts/fa-solid-900.eot");
+  src: url("../fonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../fonts/fa-solid-900.woff2") format("woff2"), url("../fonts/fa-solid-900.woff") format("woff"), url("../fonts/fa-solid-900.ttf") format("truetype"), url("../fonts/fa-solid-900.svg#fontawesome") format("svg"); }
+
+.fa,
+.fas {
+  font-family: 'Font Awesome 5 Pro';
+  font-weight: 900; }
