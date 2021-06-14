@@ -20,9 +20,6 @@
 	@media #{$md} {
 		margin-top: 70px;
 	}
-	@media #{$xs} {
-		margin-top: 70px;
-	}
 	&::before{
 		position: absolute;
 		content: '';
@@ -197,7 +194,7 @@
 					font-size: 65px;
 					font-weight: 700;
 					color: $black;
-					padding-bottom: 20px;
+					padding-bottom: 1vh;
 					@media #{$xs} {
 						font-size: 36px;
 					}
