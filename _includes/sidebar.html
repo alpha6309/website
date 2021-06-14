@@ -18,7 +18,7 @@
             <div class="item">
                 <a href="{{site.baseurl}}{{post.url}}"><h5 class="title">{{post.title | truncatewords: 4}}</h5></a>
                 <span>{{post.date | date_to_long_string}}</span>
-                <a href="{{site.baseurl}}{{post.url}}"><img src="{{site.baseurl}}{{post.post_image}}" alt="{{post.title}}" width="50px"/></a>
+                <a href="{{site.baseurl}}{{post.url}}"><img src="{{site.baseurl}}{{post.post_image}}" alt="{{post.title}}" width="50px" loading="lazy"/></a>
             </div>
         </div>
         {% endfor %}
@@ -57,7 +57,7 @@
     </div>
 -->
     <div class="blog-add-area mt-55">
-        <img src="{{site.baseurl}}/assets/images/bible-flower.jpg" alt="">
+        <img src="{{site.baseurl}}/assets/images/bible-flower.jpg" alt="" loading="lazy">
         <div class="add-overlay">
             <h3 class="title">申命記 <br> 6:6-9</h3>
             <p>我今日所吩咐你的話都要記在心上，也要殷勤教訓你的兒女。無論你坐在家裡，行在路上，躺下，起來，都要談論。也要繫在手上為記號，戴在額上為經文；又要寫在你房屋的門框上，並你的城門上</p>
