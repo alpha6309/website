@@ -39,14 +39,35 @@ readers do not read off random characters that represent icons */
 .fa-angle-up:before {
   content: "\f106"; }
 
+.fa-arrow-circle-left:before {
+  content: "\f0a8"; }
+
+.fa-arrow-circle-right:before {
+  content: "\f0a9"; }
+
+.fa-arrow-right:before {
+  content: "\f061"; }
+
 .fa-bible:before {
   content: "\f647"; }
+
+.fa-books:before {
+  content: "\f5db"; }
 
 .fa-calendar-alt:before {
   content: "\f073"; }
 
 .fa-clock:before {
   content: "\f017"; }
+
+.fa-cross:before {
+  content: "\f654"; }
+
+.fa-dharmachakra:before {
+  content: "\f655"; }
+
+.fa-drafting-compass:before {
+  content: "\f568"; }
 
 .fa-envelope:before {
   content: "\f0e0"; }
@@ -60,11 +81,17 @@ readers do not read off random characters that represent icons */
 .fa-facebook-f:before {
   content: "\f39e"; }
 
+.fa-facebook-square:before {
+  content: "\f082"; }
+
 .fa-file:before {
   content: "\f15b"; }
 
 .fa-fingerprint:before {
   content: "\f577"; }
+
+.fa-gift-card:before {
+  content: "\f663"; }
 
 .fa-globe-stand:before {
   content: "\f5f6"; }
@@ -75,8 +102,20 @@ readers do not read off random characters that represent icons */
 .fa-google-plus-g:before {
   content: "\f0d5"; }
 
+.fa-hat-santa:before {
+  content: "\f7a7"; }
+
+.fa-head-side-brain:before {
+  content: "\f808"; }
+
 .fa-instagram:before {
   content: "\f16d"; }
+
+.fa-laptop-code:before {
+  content: "\f5fc"; }
+
+.fa-layer-group:before {
+  content: "\f5fd"; }
 
 .fa-layer-plus:before {
   content: "\f5ff"; }
@@ -90,6 +129,9 @@ readers do not read off random characters that represent icons */
 .fa-long-arrow-right:before {
   content: "\f178"; }
 
+.fa-map-marked-alt:before {
+  content: "\f5a0"; }
+
 .fa-map-marker-alt:before {
   content: "\f3c5"; }
 
@@ -99,11 +141,20 @@ readers do not read off random characters that represent icons */
 .fa-pen-alt:before {
   content: "\f305"; }
 
+.fa-pencil:before {
+  content: "\f040"; }
+
 .fa-phone:before {
   content: "\f095"; }
 
 .fa-phone-office:before {
   content: "\f67d"; }
+
+.fa-play:before {
+  content: "\f04b"; }
+
+.fa-play-circle:before {
+  content: "\f144"; }
 
 .fa-quote-right:before {
   content: "\f10e"; }
@@ -111,14 +162,38 @@ readers do not read off random characters that represent icons */
 .fa-search:before {
   content: "\f002"; }
 
+.fa-server:before {
+  content: "\f233"; }
+
 .fa-star:before {
   content: "\f005"; }
+
+.fa-star-of-david:before {
+  content: "\f69a"; }
+
+.fa-stars:before {
+  content: "\f762"; }
+
+.fa-trophy-alt:before {
+  content: "\f2eb"; }
 
 .fa-twitter:before {
   content: "\f099"; }
 
+.fa-umbrella-beach:before {
+  content: "\f5ca"; }
+
+.fa-unicorn:before {
+  content: "\f727"; }
+
+.fa-upload:before {
+  content: "\f093"; }
+
 .fa-user:before {
   content: "\f007"; }
+
+.fa-users:before {
+  content: "\f0c0"; }
 
 .fa-youtube:before {
   content: "\f167"; }
