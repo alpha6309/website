@@ -47,4 +47,5 @@ date: 2019-05-28 00:00:00 +0800
 
 # 縮小 CSS
 為增進網站載入速度，用 [purgecss](https://purgecss.com/CLI.html) 縮小 css 檔案，它會透過分析既有 HTML，移除沒用到的 css selector，只留下用到的，因此減小檔案。經過縮減的檔名都附加 `required`，例如 `fontawesome580.required.css`. 
-但bootstrap.min.css 經過此程序後，會移除一些必要的 css selector 因此無法使用。 
+
+`purgecss --css assets/css/fontawesome580.css --content _site/**/*.html -o fontawesome580.required.css`
