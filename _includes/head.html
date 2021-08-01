@@ -12,6 +12,8 @@
     {% if page.animate %}
     <link rel="stylesheet" href="{{site.baseurl}}/assets/css/animate.required.css"/>
     {% endif %}
+    <!-- load jquery in the head because most of libraries depends on it -->
+    <script src="{{site.baseurl}}/assets/js/vendor/jquery-1.12.4.min.js"></script>
 <!--
     <link rel="stylesheet" href="{{site.baseurl}}/assets/css/slick.css"/>
     <link rel="stylesheet" href="{{site.baseurl}}/assets/css/magnific-popup.css"/>
