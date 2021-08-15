@@ -51,7 +51,7 @@ $(function() {
 
 
 
-
+    /*
         //===== seller Active slick slider
     $('.team-active').slick({
         dots: false,
@@ -166,7 +166,7 @@ $(function() {
       ]
     });
 
-    
+
     
         //===== seller Active slick slider
     $('.testinonials-3-active').slick({
@@ -306,8 +306,8 @@ $(function() {
       }
     });
     
+
     //===== counter up
-    /*
     $('.counter').counterUp({
         delay: 10,
         time: 2000
