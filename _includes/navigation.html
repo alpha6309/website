@@ -29,7 +29,7 @@
                                     {% if link.submenu %}
                                     <ul class="sub-menu">
                                         {% for sublink in link.submenu %}
-                                        <li><a class="nav-link" href="{{site.baseurl}}{{sublink.url}}">{{sublink.text}}</a></li>
+                                        <li><a class="nav-link" href="{{site.baseurl}}{{sublink.url}}" target="_blank">{{sublink.text}}</a></li>
                                         {% endfor %}
                                     </ul>
                                     {% endif %}
