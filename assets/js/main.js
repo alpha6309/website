@@ -322,7 +322,7 @@ $(function() {
 
 
     //===== WOW js
-    new WOW().init();
+    //new WOW().init();
 
     
     //===== project Active
