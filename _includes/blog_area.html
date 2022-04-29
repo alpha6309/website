@@ -21,7 +21,7 @@
 <!--                            {% if post.author %}-->
 <!--                             <li><i class="fal fa-user"></i> {{post.author}}</li>-->
 <!--                            {% endif %}-->
-                            <li><i class="fal fa-calendar-alt"></i> {{post.date | date: "%Y/%m/%d"}}</li>
+                            <li><i class="fal fa-calendar-alt"></i> {{post.date | date: "%Y/%m/%d"}} 發布</li>
                         </ul>
                         <h3 class="title"><a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a></h3>
                         <p>{{post.excerpt | strip_html | truncatewords: "25"}}</p>
