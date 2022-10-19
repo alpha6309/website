@@ -24,7 +24,11 @@
     url: "/pages/report/2019年阿爾法兒童讀經協會事工報告.pdf"
   - text: "2018"
     url: "/pages/report/2018年阿爾法兒童讀經協會事工報告.pdf"
-
+- text: 奉獻徵信
+  url: ""
+  submenu:
+    - text: "2022"
+      url: "https://drive.google.com/file/d/1wtld1DLI0_luF_yUI9Zm1M9-eWYeXV5R/view"
 #- text: Home
 #  url: /
 #  submenu:
