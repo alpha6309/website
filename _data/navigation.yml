@@ -4,8 +4,8 @@
   submenu:
     - text: 事工團隊
       url: "/pages/團隊"
-    - text: 新聞報導
-      url: "/pages/新聞報導"
+#    - text: 新聞報導
+#      url: "/pages/新聞報導"
 - text: 出版品
   url: "/pages/出版品"
 - text: 關於讀經
