@@ -108,6 +108,9 @@ readers do not read off random characters that represent icons */
 .fa-head-side-brain:before {
   content: "\f808"; }
 
+.fa-id-badge:before {
+  content: "\f2c1"; }
+
 .fa-instagram:before {
   content: "\f16d"; }
 
