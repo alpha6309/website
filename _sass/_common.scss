@@ -126,6 +126,7 @@ p {
     @include transition(0.4s);
     background-color: $theme-color;
     position: relative;
+    margin: 1px;
     &::before{
     	position: absolute;
     	content: '';
