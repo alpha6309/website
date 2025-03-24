@@ -52,12 +52,12 @@
 		top: 0;
 		height: 130%;
 		width: 50%;
-		background-image: url(../images/girl-on-stage.jpg);
 		background-size: cover;
 		background-position: right center;
 		background-repeat: no-repeat;
 		z-index: -2;
 		@media #{$md} {
+			background-image: url(../images/girl-on-stage.jpg);
 			background-position: -240px 0px;
 		}
 	}
