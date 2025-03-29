@@ -8,8 +8,8 @@
 
 url: 'http://localhost:4000'
 baseurl: ''
-sass:
+#sass:
   # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
-  sass_dir: _sass
-  style: :expanded
-  line_numbers: true
+#  sass_dir: _sass
+#  style: :expanded
+#  line_numbers: true
